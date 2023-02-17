@@ -1,6 +1,6 @@
 {
   "name": "nuxt-svg-icons",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A module for Nuxt 3 that allows you to use your own SVG icons quickly and enjoyably.",
   "author": {
     "name": "elenh",
@@ -41,7 +41,8 @@
     "test:watch": "vitest watch"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.2.0"
+    "@nuxt/kit": "^3.2.0",
+    "vite-plugin-svg4vue": "^2.1.5"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.1.1",

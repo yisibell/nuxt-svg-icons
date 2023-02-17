@@ -1,40 +1,38 @@
 <template>
   <div>
     <ul>
-      <li>Pure icon: <nuxt-icon name="fire" /></li>
-      <li class="colored">
-        Icon with color from text: <nuxt-icon name="fire" />
-      </li>
       <li>
-        Icon with defs: <nuxt-icon
-          name="css3"
-          filled
-        />
-        <nuxt-icon
-          name="javascript"
-          filled
+        Icon with fill and font-size   
+        <FireIcon
+          fill="red"
+          font-size="36"
         />
       </li>
+    </ul>
+
+    <h3>iconfont svg demo</h3>
+
+    <ul>
       <li>
-        Subfolder icons: <nuxt-icon name="user/badge" /> User,
-        <nuxt-icon name="admin/badge" /> Admin,
-        <nuxt-icon name="admin/form/bug" />
+        Icon with fill and font-size 
+        <VueLogo
+          fill="green"
+          font-size="36"
+        />
       </li>
-      <li>
-        Reactive change:
-        <nuxt-icon :name="icon ? 'user/badge' : 'admin/form/bug'" />
-        <button @click="icon = !icon">
-          Update
-        </button>
-      </li>
+
+      <li>Icon with font-szie <VueLogoFilled font-size="50" /> </li>
     </ul>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from '#imports'
+// import { ref } from '#imports'
 
-const icon = ref(false)
+import FireIcon from '~/assets/icons/fire.svg?component'
+import VueLogo from '~/assets/icons/iconfont/vue-logo.svg?component'
+import VueLogoFilled from '~/assets/icons/iconfont/vue-logo-filled.svg?component'
+
 </script>
 
 <style>

@@ -1,8 +1,7 @@
-import { defineNuxtModule, createResolver, addComponent } from '@nuxt/kit'
+import { defineNuxtModule, addVitePlugin } from '@nuxt/kit'
+import { svg4VuePlugin, Svg4VuePluginOptions } from 'vite-plugin-svg4vue'
 
-export interface ModuleOptions {
-  // dir: string
-}
+export interface ModuleOptions extends Svg4VuePluginOptions {}
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
@@ -13,11 +12,8 @@ export default defineNuxtModule<ModuleOptions>({
     }
   },
   setup () {
-    const { resolve } = createResolver(import.meta.url)
-    addComponent({
-      name: 'nuxt-svg-icon',
-      global: true,
-      filePath: resolve('./runtime/components/nuxt-svg-icon.vue')
-    })
+    addVitePlugin(svg4VuePlugin({
+      assetsDirName: 'assets/icons'
+    }))
   }
 })
