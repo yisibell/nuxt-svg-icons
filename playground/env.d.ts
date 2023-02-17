@@ -1,1 +1,1 @@
-/// <reference types="vite-plugin-svg4vue/client" />
+/// <reference types="../client.d.ts" />

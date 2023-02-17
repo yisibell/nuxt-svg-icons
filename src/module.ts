@@ -11,9 +11,10 @@ export default defineNuxtModule<ModuleOptions>({
       nuxt: '^3.0.0'
     }
   },
-  setup () {
-    addVitePlugin(svg4VuePlugin({
-      assetsDirName: 'assets/icons'
-    }))
+  defaults: {
+    assetsDirName: 'assets/icons'
+  },
+  setup (moduleOptions) {
+    addVitePlugin(svg4VuePlugin(moduleOptions))
   }
 })

@@ -1,17 +1,4 @@
-<!--
-Get your module up and running quickly.
-
-Find and replace all on all files (CMD+SHIFT+F):
-- Name: nuxt-svg-icons
-- Package name: nuxt-svg-icons
-- Description: A module for Nuxt 3 that allows you to use your own SVG icons quickly and enjoyably.
--->
-
 # nuxt-svg-icons
-
-[![npm version][npm-version-src]][npm-version-href]
-[![npm downloads][npm-downloads-src]][npm-downloads-href]
-[![License][license-src]][license-href]
 
 > A module for Nuxt 3 that allows you to use your own SVG icons quickly and enjoyably.
 
@@ -20,10 +7,7 @@ Find and replace all on all files (CMD+SHIFT+F):
 
 ## Features
 
-<!-- Highlight some of the features your module provide here -->
-- ⛰ &nbsp;Foo
-- 🚠 &nbsp;Bar
-- 🌲 &nbsp;Baz
+- see <a href="https://github.com/yisibell/vite-plugin-svg4vue#features" target="_blank">**vite-plugin-svg4vue** 's Features</a>.
 
 ## Quick Setup
 
@@ -46,17 +30,45 @@ npm install --save-dev nuxt-svg-icons
 export default defineNuxtConfig({
   modules: [
     'nuxt-svg-icons'
-  ]
+    // use inline options
+    // [NuxtSvgIcons, { assetsDirName: 'assets/icons' }]
+  ],
+  // custom nuxt-svg-icons options
+  nuxtSvgIcons: {
+    assetsDirName: 'assets/icons'
+  }
 })
 ```
 
-That's it! You can now use nuxt-svg-icons in your Nuxt app ✨
+3. Put your svg icons in `~/assets/icons` folder.
+
+4. Import your svg icon as a **Vue Component**.
+
+``` vue
+<template>
+  <div>
+    <VueLogo fill="green" font-size="36" />
+    <VueLogoFilled font-size="50" />
+  </div>
+</template>
+
+<script setup lang="ts">
+import VueLogo from '~/assets/icons/iconfont/vue-logo.svg?component'
+import VueLogoFilled from '~/assets/icons/iconfont/vue-logo-filled.svg?component'
+</script>
+```
+
+That's it! You can now use **nuxt-svg-icons** in your Nuxt app ✨
+
+## Options
+
+see <a href="https://github.com/yisibell/vite-plugin-svg4vue#options">**vite-plugin-svg4vue** 's Options</a>.
 
 ## Development
 
 ```bash
 # Install dependencies
-npm install
+yarn install
 
 # Generate type stubs
 npm run dev:prepare
@@ -77,13 +89,3 @@ npm run test:watch
 # Release new version
 npm run release
 ```
-
-<!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/nuxt-svg-icons/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
-[npm-version-href]: https://npmjs.com/package/nuxt-svg-icons
-
-[npm-downloads-src]: https://img.shields.io/npm/dm/nuxt-svg-icons.svg?style=flat&colorA=18181B&colorB=28CF8D
-[npm-downloads-href]: https://npmjs.com/package/nuxt-svg-icons
-
-[license-src]: https://img.shields.io/npm/l/nuxt-svg-icons.svg?style=flat&colorA=18181B&colorB=28CF8D
-[license-href]: https://npmjs.com/package/nuxt-svg-icons

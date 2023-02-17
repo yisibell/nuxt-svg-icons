@@ -34,9 +34,3 @@ import VueLogo from '~/assets/icons/iconfont/vue-logo.svg?component'
 import VueLogoFilled from '~/assets/icons/iconfont/vue-logo-filled.svg?component'
 
 </script>
-
-<style>
-.colored {
-  color: orange;
-}
-</style>
