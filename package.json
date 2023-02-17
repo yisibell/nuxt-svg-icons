@@ -1,7 +1,11 @@
 {
   "name": "nuxt-svg-icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A module for Nuxt 3 that allows you to use your own SVG icons quickly and enjoyably.",
+  "author": {
+    "name": "elenh",
+    "email": "yisiwings@163.com"
+  },
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -16,6 +20,16 @@
   "files": [
     "dist"
   ],
+  "keywords": [
+    "nuxt3",
+    "nuxt-module",
+    "svg",
+    "svg-icon"
+  ],
+  "homepage": "https://github.com/yisibell/nuxt-svg-icons",
+  "bugs": {
+    "url": "https://github.com/yisibell/nuxt-svg-icons/issues"
+  },
   "scripts": {
     "prepack": "nuxt-module-build",
     "dev": "nuxi dev playground",

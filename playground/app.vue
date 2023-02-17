@@ -1,8 +1,44 @@
 <template>
   <div>
-    Nuxt module playground!
+    <ul>
+      <li>Pure icon: <nuxt-icon name="fire" /></li>
+      <li class="colored">
+        Icon with color from text: <nuxt-icon name="fire" />
+      </li>
+      <li>
+        Icon with defs: <nuxt-icon
+          name="css3"
+          filled
+        />
+        <nuxt-icon
+          name="javascript"
+          filled
+        />
+      </li>
+      <li>
+        Subfolder icons: <nuxt-icon name="user/badge" /> User,
+        <nuxt-icon name="admin/badge" /> Admin,
+        <nuxt-icon name="admin/form/bug" />
+      </li>
+      <li>
+        Reactive change:
+        <nuxt-icon :name="icon ? 'user/badge' : 'admin/form/bug'" />
+        <button @click="icon = !icon">
+          Update
+        </button>
+      </li>
+    </ul>
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import { ref } from '#imports'
+
+const icon = ref(false)
 </script>
+
+<style>
+.colored {
+  color: orange;
+}
+</style>
