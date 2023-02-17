@@ -1,6 +1,21 @@
 # Changelog
 
 
+## v1.2.1
+
+
+### 📖 Documentation
+
+  - Fix readme (7dfe73b)
+
+### 🏡 Chore
+
+  - **docs:** Update docs for typescript (fe3bb9c)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.2.0
 
 
