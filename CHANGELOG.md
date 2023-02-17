@@ -1,6 +1,17 @@
 # Changelog
 
 
+## v1.2.0
+
+
+### 🚀 Enhancements
+
+  - Use vite-plugin-svg4vue to handle svg icons (50f0848)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.1.0
 
 
