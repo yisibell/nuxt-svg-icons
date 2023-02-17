@@ -31,7 +31,7 @@ export default defineNuxtConfig({
   modules: [
     'nuxt-svg-icons'
     // use inline options
-    // [NuxtSvgIcons, { assetsDirName: 'assets/icons' }]
+    // ['nuxt-svg-icons', { assetsDirName: 'assets/icons' }]
   ],
   // custom nuxt-svg-icons options
   nuxtSvgIcons: {
