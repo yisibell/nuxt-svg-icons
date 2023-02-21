@@ -1,6 +1,17 @@
 # Changelog
 
 
+## v1.5.1
+
+
+### 🩹 Fixes
+
+  - **docs:** Fix readme doc (840bce2)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.5.0
 
 
