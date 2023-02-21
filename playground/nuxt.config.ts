@@ -4,9 +4,10 @@ import NuxtSvgIcons from '../src/module'
 export default defineNuxtConfig({
   modules: [
     NuxtSvgIcons
-    // [NuxtSvgIcons, { assetsDirName: 'assets/icons' }]
   ],
   nuxtSvgIcons: {
-    assetsDirName: 'assets/icons'
+    svg4vue: {
+      assetsDirName: 'assets/icons'
+    }
   }
 })

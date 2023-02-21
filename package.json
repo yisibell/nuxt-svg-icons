@@ -25,7 +25,9 @@
     "nuxt3",
     "nuxt-module",
     "svg",
-    "svg-icon"
+    "svg-icon",
+    "svg-component",
+    "vite"
   ],
   "homepage": "https://github.com/yisibell/nuxt-svg-icons",
   "bugs": {
@@ -36,14 +38,15 @@
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
-    "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
+    "release": "npm run prepack && changelogen --release && npm publish && git push --follow-tags",
+    "release:lint:test": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest watch"
   },
   "dependencies": {
     "@nuxt/kit": "^3.2.0",
-    "vite-plugin-svg4vue": "^2.1.5"
+    "vite-plugin-svg4vue": "^2.2.2"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.1.1",

@@ -1,6 +1,6 @@
 # nuxt-svg-icons
 
-> A module for Nuxt 3 that allows you to use your own SVG icons quickly and enjoyably.
+> A module for Nuxt 3 that allows you to use your own SVG icons quickly and enjoyably powerd by <a href="https://github.com/yisibell/vite-plugin-svg4vue" target="_blank">vite-plugin-svg4vue</a>.
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
 <!-- - [📖 &nbsp;Documentation](https://example.com) -->
@@ -31,11 +31,18 @@ export default defineNuxtConfig({
   modules: [
     'nuxt-svg-icons'
     // use inline options
-    // ['nuxt-svg-icons', { assetsDirName: 'assets/icons' }]
+    // [
+    //   'nuxt-svg-icons',
+    //   {
+    //     svg4vue: { assetsDirName: 'assets/icons' }
+    //   }
+    // ]
   ],
   // custom nuxt-svg-icons options
   nuxtSvgIcons: {
-    assetsDirName: 'assets/icons'
+    svg4vue: {
+      assetsDirName: 'assets/icons'
+    }
   }
 })
 ```
