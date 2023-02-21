@@ -112,6 +112,15 @@ then the icons's name will be based on its own path directory and filename. Ther
 <nuxt-svg-icon name="admin/badge" /> and <nuxt-svg-icon name="user/badge" />
 ```
 
+### Component properties
+
+| Prop name | Default value | Required | Description | Type |
+| :---: | :---: | :---: |
+| `name` | `undefined` | `true` | The value will be based on its own path directory and filename | `string` |
+| `fontSize` | `undefined` | `false` | The SVG font size  | `string` or `number` |
+| `fill` | `undefined` | `false` | Define the SVG fill value | `string` |
+| `stroke` | `undefined` | `false` | Define the SVG stroke value | `string` |
+
 ## Options
 
 | Key | Default value | Description |

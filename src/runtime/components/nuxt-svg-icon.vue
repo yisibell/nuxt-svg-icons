@@ -13,14 +13,16 @@ const props = withDefaults(defineProps<{
   name: string;
   fontSize?: string | number;
   fill?: string
-}>(), { fontSize: undefined, fill: undefined })
+  stroke?: string
+}>(), { fontSize: undefined, fill: undefined, stroke: undefined })
 
 const styleVars = computed(() => {
   const fontSizeCssVar = typeof props.fontSize === 'number' ? `${props.fontSize}px` : props.fontSize
 
   return {
     '--svg-icon-font-size': fontSizeCssVar,
-    '--svg-icon-fill': props.fill
+    '--svg-icon-fill': props.fill,
+    '--svg-icon-stroke': props.stroke
   }
 })
 
@@ -57,7 +59,7 @@ watchEffect(async () => {
 
 .nuxt-svg-icon svg {
   font-size: var(--svg-icon-font-size) !important;
-  color: var(--svg-icon-fill) !important;
   fill: var(--svg-icon-fill) !important;
+  stroke: var(--svg-icon-stroke) !important;
 }
 </style>
