@@ -1,6 +1,17 @@
 # Changelog
 
 
+## v1.3.1
+
+
+### 📖 Documentation
+
+  - Update readme (0a2d95f)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.3.0
 
 
