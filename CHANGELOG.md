@@ -1,6 +1,17 @@
 # Changelog
 
 
+## v1.3.0
+
+
+### 🚀 Enhancements
+
+  - Support nuxt-svg-icons (85f36a8)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.2.1
 
 
