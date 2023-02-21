@@ -1,6 +1,17 @@
 # Changelog
 
 
+## v1.5.0
+
+
+### 🚀 Enhancements
+
+  - Support svg stroke (8a73cbc)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.4.0
 
 
