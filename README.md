@@ -84,6 +84,8 @@ If you are using TypeScript, `nuxt-svg-icons/client` can be added to `d.ts` decl
 
 That's it! You can now use **nuxt-svg-icons** in your Nuxt app ✨
 
+> TIPS: All svg will be processed by <a href="https://github.com/yisibell/vite-plugin-svg4vue" target="_blank">vite-plugin-svg4vue</a>. More build details please see its self!!!
+
 ## About the global component `nuxt-svg-icon`
 
 In the project, use <nuxt-svg-icon name="">, where name is the name of your svg icon from the folder `~/assets/icons`
@@ -115,11 +117,13 @@ then the icons's name will be based on its own path directory and filename. Ther
 ### Component properties
 
 | Prop name | Default value | Required | Description | Type |
-| :---: | :---: | :---: |
+| :---: | :---: | :---: | :---: | :---: |
 | `name` | `undefined` | `true` | The value will be based on its own path directory and filename | `string` |
-| `fontSize` | `undefined` | `false` | The SVG font size  | `string` or `number` |
+| `fontSize` | `undefined` | `false` | The SVG font size. In fact, it will inherit from the svg width value, that is, `1em`  | `string` or `number` |
 | `fill` | `undefined` | `false` | Define the SVG fill value | `string` |
 | `stroke` | `undefined` | `false` | Define the SVG stroke value | `string` |
+
+
 
 ## Options
 
