@@ -1,6 +1,17 @@
 # Changelog
 
 
+## v1.4.0
+
+
+### 🚀 Enhancements
+
+  - Add enableNuxtSvgIconComponent module option (3d8dafa)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.3.2
 
 
