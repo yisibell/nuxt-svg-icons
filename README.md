@@ -1,6 +1,6 @@
 # nuxt-svg-icons
 
-> A module for Nuxt 3 that allows you to use your own SVG icons quickly and enjoyably powerd by <a href="https://github.com/yisibell/vite-plugin-svg4vue" target="_blank">vite-plugin-svg4vue</a>.
+> A module for Nuxt 3 that allows you to use your own SVG icons quickly and enjoyably powerd by <a href="https://github.com/yisibell/vite-plugin-svg4vue" target="_blank">vite-plugin-svg4vue</a>. More powerful than <a href="https://github.com/gitFoxCode/nuxt-icons">nuxt-icons</a>!!!
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
 <!-- - [📖 &nbsp;Documentation](https://example.com) -->
@@ -8,12 +8,12 @@
 ## Features
 
 - Multiple ways of use.
-- Support using svg as a **component**, **url** and **raw**.
+- Support using svg as a **component**, **url** and **raw** with query string.
 - HMR (You don't have to reset the project to reload the icons)
-- Ability to manipulate icons. e.g. using `font-szie` and `fill`
+- Ability to manipulate icons. e.g. using `font-size` and `fill`
 - Icon only loads if used.
 - Support <a href="https://www.iconfont.cn/"> Iconfont svg icons </a>
-- Support Optimize svg.
+- Support Optimize svg with **svgo**.
 
 ## Quick Setup
 
