@@ -84,9 +84,13 @@ If you are using TypeScript, `nuxt-svg-icons/client` can be added to `d.ts` decl
 
 That's it! You can now use **nuxt-svg-icons** in your Nuxt app ✨
 
-## About the component `nuxt-svg-icon`
+## About the global component `nuxt-svg-icon`
 
 In the project, use <nuxt-svg-icon name="">, where name is the name of your svg icon from the folder `~/assets/icons`
+
+```html
+<nuxt-svg-icon name="foo" /> 
+```
 
 ### Subfolders
 
@@ -105,7 +109,7 @@ If you have a svg icon in nested directories such as:
 then the icons's name will be based on its own path directory and filename. Therefore, the icon's name will be:
 
 ```html
-<nuxt-icon name="admin/badge"> and <nuxt-icon name="user/badge">
+<nuxt-svg-icon name="admin/badge" /> and <nuxt-svg-icon name="user/badge" />
 ```
 
 ## Options
@@ -113,6 +117,7 @@ then the icons's name will be based on its own path directory and filename. Ther
 | Key | Default value | Description |
 | :---: | :---: | :---: |
 | `svg4vue`| `{ assetsDirName: 'assets/icons' }` | <a href="https://github.com/yisibell/vite-plugin-svg4vue#options">**vite-plugin-svg4vue** 's Options</a> |
+| `enableNuxtSvgIconComponent` | `true` | Whether to enable `nuxt-svg-icon` component, if set `false`, The global component `nuxt-svg-icon` will not be registered |
 
 ## Development
 
