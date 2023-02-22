@@ -1,6 +1,17 @@
 # Changelog
 
 
+## v1.6.0
+
+
+### 🚀 Enhancements
+
+  - Support manipulate the color of outline svg which is created by stroke attribute (afdbf72)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.5.2
 
 
