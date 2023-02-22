@@ -10,7 +10,7 @@
 - Multiple ways of use.
 - Support using svg as a **component**, **url** and **raw** with query string.
 - HMR (You don't have to reset the project to reload the icons)
-- Ability to manipulate icons. e.g. using `font-size` and `fill`
+- Ability to manipulate icons. e.g. using `font-size` , `fill` and `stroke`
 - Icon only loads if used.
 - Support <a href="https://www.iconfont.cn/"> Iconfont svg icons </a>
 - Support Optimize svg with **svgo**.
@@ -88,7 +88,17 @@ That's it! You can now use **nuxt-svg-icons** in your Nuxt app ✨
 
 ## About the global component `nuxt-svg-icon`
 
-In the project, use <nuxt-svg-icon name="">, where name is the name of your svg icon from the folder `~/assets/icons`
+### Component properties
+
+| Prop name | Default value | Required | Description | Type |
+| :---: | :---: | :---: | :---: | :---: |
+| `name` | `undefined` | `true` | The value will be based on its own path directory and filename | `string` |
+| `fontSize` | `undefined` | `false` | The SVG font size. In fact, **vite-plugin-svg4vue** will remove svg `height` and set `width` to `1em`, so that the svg size will be responsive and you can manipulate it's size with `font-size` | `string` or `number` |
+| `fill` | `undefined` | `false` | Define the SVG `fill` value. In terms of internal implementation, **vite-plugin-svg4vue** will move all **path** 's `fill` attribute to its parent node which is `svg` node when your svg is a **monochrome** icon | `string` |
+| `stroke` | `undefined` | `false` | Define the SVG stroke value | `string` |
+
+
+In the project, use `<nuxt-svg-icon name="">`, where name is the name of your svg icon from the folder `~/assets/icons`
 
 ```html
 <nuxt-svg-icon name="foo" /> 
@@ -113,15 +123,6 @@ then the icons's name will be based on its own path directory and filename. Ther
 ```html
 <nuxt-svg-icon name="admin/badge" /> and <nuxt-svg-icon name="user/badge" />
 ```
-
-### Component properties
-
-| Prop name | Default value | Required | Description | Type |
-| :---: | :---: | :---: | :---: | :---: |
-| `name` | `undefined` | `true` | The value will be based on its own path directory and filename | `string` |
-| `fontSize` | `undefined` | `false` | The SVG font size. In fact, it will inherit from the svg width value, that is, `1em`  | `string` or `number` |
-| `fill` | `undefined` | `false` | Define the SVG fill value | `string` |
-| `stroke` | `undefined` | `false` | Define the SVG stroke value | `string` |
 
 
 
