@@ -20,7 +20,7 @@
 - Multiple ways of use.
 - Support using svg as a **component**, **url** and **raw** with query string.
 - HMR (You don't have to reset the project to reload the icons)
-- Ability to manipulate icons. e.g. using `font-size` , `fill` , `stroke` `fill-opacity` and `stroke-opacity`
+- Ability to manipulate icons. e.g. using `font-size` , `fill` , `stroke` , `fill-opacity` and `stroke-opacity`
 - Icon only loads if used.
 - Support <a href="https://www.iconfont.cn/"> Iconfont svg icons </a>
 - Support Optimize svg with **svgo**.
@@ -111,7 +111,7 @@ That's it! You can now use **nuxt-svg-icons** in your Nuxt app ✨
 | `useOriginSize` | `false` | `false` | Whether to use the svg origin `width` and `height` | `boolean` |
 
 
-In the project, use `<nuxt-svg-icon name="">`, where name is the name of your svg icon from the folder `~/assets/icons`
+In the project, use `<nuxt-svg-icon name="" />`, where name is the name of your svg icon from the folder `~/assets/icons`
 
 ```html
 <nuxt-svg-icon name="foo" /> 
