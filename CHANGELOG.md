@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.7.0
+
+
+### 🚀 Enhancements
+
+  - **deps:** Path supports recursive lookup (105e733)
+
+### 🏡 Chore
+
+  - **docs:** Update readme (38a3abb)
+  - **docs:** Update readme (e9683d3)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.6.0
 
 
