@@ -1,6 +1,17 @@
 # Changelog
 
 
+## v1.8.0
+
+
+### 🚀 Enhancements
+
+  - Support fill-opacity, stroke-opacity and use origin svg size (4124527)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.7.0
 
 
