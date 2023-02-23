@@ -1,6 +1,6 @@
 <template>
   <span
-    class="nuxt-svg-icon"
+    :class="['nuxt-svg-icon', descriptorClass]"
     :style="[styleVars]"
     v-html="icon"
   />
@@ -14,7 +14,21 @@ const props = withDefaults(defineProps<{
   fontSize?: string | number;
   fill?: string
   stroke?: string
-}>(), { fontSize: undefined, fill: undefined, stroke: undefined })
+  fillOpacity?: string
+  strokeOpacity?: string
+  useOriginSize?: boolean
+}>(), { 
+  fontSize: undefined, 
+  fill: undefined, 
+  stroke: undefined, 
+  fillOpacity: undefined, 
+  strokeOpacity: undefined, 
+  useOriginSize: false 
+})
+
+const descriptorClass = computed(() => {
+  return { 'use-origin-width': props.useOriginSize, 'use-origin-height': props.useOriginSize }
+})
 
 const styleVars = computed(() => {
   const fontSizeCssVar = typeof props.fontSize === 'number' ? `${props.fontSize}px` : props.fontSize
@@ -22,7 +36,9 @@ const styleVars = computed(() => {
   return {
     '--svg-icon-font-size': fontSizeCssVar,
     '--svg-icon-fill': props.fill,
-    '--svg-icon-stroke': props.stroke
+    '--svg-icon-stroke': props.stroke,
+    '--svg-icon-fill-opacity': props.fillOpacity,
+    '--svg-icon-stroke-opacity': props.strokeOpacity
   }
 })
 
@@ -61,5 +77,15 @@ watchEffect(async () => {
   font-size: var(--svg-icon-font-size) !important;
   fill: var(--svg-icon-fill) !important;
   stroke: var(--svg-icon-stroke) !important;
+  fill-opacity: var(--svg-icon-fill-opacity) !important;
+  stroke-opacity: var(--svg-icon-stroke-opacity) !important;
+}
+
+.use-origin-width svg {
+  width: var(--svg-origin-width--with-unit) !important;
+}
+
+.use-origin-height svg {
+  height: var(--svg-origin-height--with-unit) !important;
 }
 </style>
