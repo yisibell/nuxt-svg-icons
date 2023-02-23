@@ -1,3 +1,13 @@
+<p align="center">
+  <a href="https://www.npmjs.org/package/nuxt-svg-icons">
+    <img src="https://img.shields.io/npm/v/nuxt-svg-icons.svg">
+  </a>
+  <a href="https://npmcharts.com/compare/nuxt-svg-icons?minimal=true">
+    <img src="https://img.shields.io/npm/dm/nuxt-svg-icons.svg">
+  </a>
+  <br>
+</p>
+
 # nuxt-svg-icons
 
 > A module for Nuxt 3 that allows you to use your own SVG icons quickly and enjoyably powerd by <a href="https://github.com/yisibell/vite-plugin-svg4vue" target="_blank">vite-plugin-svg4vue</a>. More powerful than <a href="https://github.com/gitFoxCode/nuxt-icons">nuxt-icons</a>!!!
