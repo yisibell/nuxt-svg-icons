@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.9.0
+
+
+### 🚀 Enhancements
+
+  - **deps:** Update svg4vue version (6c8203a)
+
+### 🏡 Chore
+
+  - **docs:** Update readme (574905f)
+  - **docs:** Update readme (58b4f1c)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.8.0
 
 
