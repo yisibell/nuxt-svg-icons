@@ -27,7 +27,9 @@
     "svg",
     "svg-icon",
     "svg-component",
-    "vite"
+    "vite",
+    "nuxt-icons",
+    "nuxt-svg-icons"
   ],
   "homepage": "https://github.com/yisibell/nuxt-svg-icons",
   "bugs": {
