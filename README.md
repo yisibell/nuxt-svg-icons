@@ -104,7 +104,9 @@ That's it! You can now use **nuxt-svg-icons** in your Nuxt app ✨
 | :---: | :---: | :---: | :---: | :---: |
 | `name` | `undefined` | `true` | The value will be based on its own path directory and filename | `string` |
 | `fontSize` | `undefined` | `false` | The SVG font size. In fact, for the svg node, **vite-plugin-svg4vue** will set the `width` value to `font-size`, remove svg `height` and set `width` to `1em`, so that the svg size will be responsive and you can manipulate it's size with `font-size` | `string` or `number` |
+| `size` | `undefined` | `false` | Alias of `fontSize` | `string` or `number` |
 | `fill` | `undefined` | `false` | Define the SVG `fill` value. In terms of internal implementation, **vite-plugin-svg4vue** will move all **path** 's `fill` attribute to its parent node which is `svg` node when your svg is a **monochrome** icon | `string` |
+| `color` | `undefined` | `false` | Alias of `fill` | `string` |
 | `stroke` | `undefined` | `false` | Define the SVG stroke value. This allows you to change the color of **outline svg** which is created by `stroke` attribute. In terms of internal implementation, **vite-plugin-svg4vue** will move all **path** 's `stroke` attribute to its parent node which is `svg` node when your svg is a **monochrome** icon | `string` |
 | `fillOpacity` | `undefined` | `false` | The svg' s `fill-opacity` | `string` |
 | `strokeOpacity` | `undefined` | `false` | The svg' s `stroke-opacity` | `string` |

@@ -10,16 +10,20 @@
 import { ref, watchEffect, computed } from '#imports'
 
 const props = withDefaults(defineProps<{
-  name: string;
-  fontSize?: string | number;
+  name: string
+  fontSize?: string | number
+  size?: string | number
   fill?: string
+  color?: string
   stroke?: string
   fillOpacity?: string
   strokeOpacity?: string
   useOriginSize?: boolean
 }>(), { 
-  fontSize: undefined, 
+  fontSize: undefined,
+  size: undefined,
   fill: undefined, 
+  color: undefined,
   stroke: undefined, 
   fillOpacity: undefined, 
   strokeOpacity: undefined, 
@@ -30,12 +34,15 @@ const descriptorClass = computed(() => {
   return { 'use-origin-width': props.useOriginSize, 'use-origin-height': props.useOriginSize }
 })
 
+const finalFontSize = computed(() => props.fontSize || props.size)
+const finalFill = computed(() => props.fill || props.color)
+
 const styleVars = computed(() => {
-  const fontSizeCssVar = typeof props.fontSize === 'number' ? `${props.fontSize}px` : props.fontSize
+  const fontSizeCssVar = typeof finalFontSize.value === 'number' ? `${finalFontSize.value}px` : props.fontSize
 
   return {
     '--svg-icon-font-size': fontSizeCssVar,
-    '--svg-icon-fill': props.fill,
+    '--svg-icon-fill': finalFill.value,
     '--svg-icon-stroke': props.stroke,
     '--svg-icon-fill-opacity': props.fillOpacity,
     '--svg-icon-stroke-opacity': props.strokeOpacity
