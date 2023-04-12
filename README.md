@@ -18,12 +18,13 @@
 ## Features
 
 - Multiple ways of use.
+- Support Optimize svg via **SVGO**.
 - Support using svg as a **component**, **url** and **raw** with query string.
 - HMR (You don't have to reset the project to reload the icons)
 - Ability to manipulate icons. e.g. using `font-size` , `fill` , `stroke` , `fill-opacity` and `stroke-opacity`
 - Icon only loads if used.
 - Support <a href="https://www.iconfont.cn/"> Iconfont svg icons </a>
-- Support Optimize svg with **svgo**.
+
 
 ## Quick Setup
 
