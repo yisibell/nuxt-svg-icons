@@ -1,6 +1,17 @@
 # Changelog
 
 
+## v1.10.0
+
+
+### 🚀 Enhancements
+
+  - Support use alias of font-size and fill via size, color (c8113d0)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.9.2
 
 
