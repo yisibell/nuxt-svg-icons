@@ -9,43 +9,52 @@
 <script setup lang="ts">
 import { ref, watchEffect, computed } from '#imports'
 
-const props = withDefaults(defineProps<{
-  name: string
-  fontSize?: string | number
-  size?: string | number
-  fill?: string
-  color?: string
-  stroke?: string
-  fillOpacity?: string
-  strokeOpacity?: string
-  useOriginSize?: boolean
-}>(), { 
-  fontSize: undefined,
-  size: undefined,
-  fill: undefined, 
-  color: undefined,
-  stroke: undefined, 
-  fillOpacity: undefined, 
-  strokeOpacity: undefined, 
-  useOriginSize: false 
-})
+const props = withDefaults(
+  defineProps<{
+    name: string
+    fontSize?: string | number
+    size?: string | number
+    fill?: string
+    color?: string
+    stroke?: string
+    fillOpacity?: string
+    strokeOpacity?: string
+    useOriginSize?: boolean
+  }>(),
+  {
+    fontSize: undefined,
+    size: undefined,
+    fill: undefined,
+    color: undefined,
+    stroke: undefined,
+    fillOpacity: undefined,
+    strokeOpacity: undefined,
+    useOriginSize: false,
+  }
+)
 
 const descriptorClass = computed(() => {
-  return { 'use-origin-width': props.useOriginSize, 'use-origin-height': props.useOriginSize }
+  return {
+    'use-origin-width': props.useOriginSize,
+    'use-origin-height': props.useOriginSize,
+  }
 })
 
 const finalFontSize = computed(() => props.fontSize || props.size)
 const finalFill = computed(() => props.fill || props.color)
 
 const styleVars = computed(() => {
-  const fontSizeCssVar = typeof finalFontSize.value === 'number' ? `${finalFontSize.value}px` : props.fontSize
+  const fontSizeCssVar =
+    typeof finalFontSize.value === 'number'
+      ? `${finalFontSize.value}px`
+      : props.fontSize
 
   return {
     '--svg-icon-font-size': fontSizeCssVar,
     '--svg-icon-fill': finalFill.value,
     '--svg-icon-stroke': props.stroke,
     '--svg-icon-fill-opacity': props.fillOpacity,
-    '--svg-icon-stroke-opacity': props.strokeOpacity
+    '--svg-icon-stroke-opacity': props.strokeOpacity,
   }
 })
 
@@ -57,8 +66,8 @@ watchEffect(async () => {
       import: 'default',
       eager: false,
       query: {
-        raw: ''
-      }
+        raw: '',
+      },
     })
 
     const rawIcon = await iconsImport[`/assets/icons/${props.name}.svg`]()
@@ -70,7 +79,6 @@ watchEffect(async () => {
     )
   }
 })
-
 </script>
 
 <style>

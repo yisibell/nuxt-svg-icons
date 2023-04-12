@@ -1,7 +1,12 @@
-import { defineNuxtModule, addVitePlugin, createResolver, addComponent } from '@nuxt/kit'
+import {
+  defineNuxtModule,
+  addVitePlugin,
+  createResolver,
+  addComponent,
+} from '@nuxt/kit'
 import { svg4VuePlugin, Svg4VuePluginOptions } from 'vite-plugin-svg4vue'
 
-export interface ModuleOptions  {
+export interface ModuleOptions {
   svg4vue?: Svg4VuePluginOptions
   enableNuxtSvgIconComponent?: boolean
 }
@@ -11,16 +16,16 @@ export default defineNuxtModule<ModuleOptions>({
     name: 'nuxt-svg-icons',
     configKey: 'nuxtSvgIcons',
     compatibility: {
-      nuxt: '^3.0.0'
-    }
+      nuxt: '^3.0.0',
+    },
   },
   defaults: {
     svg4vue: {
-      assetsDirName: 'assets/icons'
+      assetsDirName: 'assets/icons',
     },
-    enableNuxtSvgIconComponent: true
+    enableNuxtSvgIconComponent: true,
   },
-  setup (moduleOptions) {
+  setup(moduleOptions) {
     const { resolve } = createResolver(import.meta.url)
 
     addVitePlugin(svg4VuePlugin(moduleOptions.svg4vue))
@@ -29,8 +34,8 @@ export default defineNuxtModule<ModuleOptions>({
       addComponent({
         name: 'nuxt-svg-icon',
         global: true,
-        filePath: resolve('./runtime/components/nuxt-svg-icon.vue')
+        filePath: resolve('./runtime/components/nuxt-svg-icon.vue'),
       })
     }
-  }
+  },
 })
