@@ -1,6 +1,17 @@
 # Changelog
 
 
+## v1.12.0
+
+
+### 🚀 Enhancements
+
+  - Update deps vite-plugin-svg4vue to 2.8.1 (78f16ff)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.11.0
 
 
