@@ -5641,10 +5641,10 @@ vite-plugin-checker@^0.5.5:
     vscode-languageserver-textdocument "^1.0.1"
     vscode-uri "^3.0.2"
 
-vite-plugin-svg4vue@^2.7.0:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/vite-plugin-svg4vue/-/vite-plugin-svg4vue-2.7.0.tgz#00b8ed3de83718d50bafbfe375a4089f075725d9"
-  integrity sha512-0PxqPEm10vJESWOb3uiZrezkcg78H17Cu5NDcV2/iHAGYHQ95/7ihokNR7IM95yiv/myBzU2xQOaPwnu4NgsLA==
+vite-plugin-svg4vue@^2.8.0:
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/vite-plugin-svg4vue/-/vite-plugin-svg4vue-2.8.0.tgz#2e4f8795836e111f9d7454ab96a57c5b4a6ae127"
+  integrity sha512-9Qx+ZXSC+6wA9nLbtxz/r/R5YMzc0pAI7vlXpdMIJzhvq8IMiJY2H5l/St/Y8SEAzOQp4h5F3BEsVp9XRhhBLw==
   dependencies:
     svgo "^3.0.2"
     svgo-extra "^1.2.0"
