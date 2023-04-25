@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.11.0
+
+
+### 🚀 Enhancements
+
+  - Upgrade deps vite-plugin-svg4vue to 2.8.0 (8a34af7)
+
+### 🏡 Chore
+
+  - Use prettier to format code (33b8fa0)
+  - Update readme (6bfa229)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.10.0
 
 
