@@ -4,7 +4,8 @@ import {
   createResolver,
   addComponent,
 } from '@nuxt/kit'
-import { svg4VuePlugin, Svg4VuePluginOptions } from 'vite-plugin-svg4vue'
+import { svg4VuePlugin } from 'vite-plugin-svg4vue'
+import type { Svg4VuePluginOptions } from 'vite-plugin-svg4vue'
 
 export interface ModuleOptions {
   svg4vue?: Svg4VuePluginOptions
