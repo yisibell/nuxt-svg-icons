@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v1.14.0
+
+[compare changes](https://undefined/undefined/compare/v1.13.0...v1.14.0)
+
+
+### 🚀 Enhancements
+
+  - **deps:** Upgrade deps vite-plugin-svg4vue to 2.12 (4bb98aa)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.13.0
 
 [compare changes](https://undefined/undefined/compare/v1.12.0...v1.13.0)
