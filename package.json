@@ -49,7 +49,7 @@
   },
   "dependencies": {
     "@nuxt/kit": "~3.4.2",
-    "vite-plugin-svg4vue": "^2.11.0"
+    "vite-plugin-svg4vue": "^2.12.0"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.1.1",
