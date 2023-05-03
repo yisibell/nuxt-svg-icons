@@ -5410,10 +5410,10 @@ svg-tags@^1.0.0:
   resolved "https://registry.npmmirror.com/svg-tags/-/svg-tags-1.0.0.tgz#58f71cee3bd519b59d4b2a843b6c7de64ac04764"
   integrity sha512-ovssysQTa+luh7A5Weu3Rta6FJlFBBbInjOh722LIt6klpU2/HtdUbszju/G4devcvk8PGt7FCLv5wftu3THUA==
 
-svgo-extra@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/svgo-extra/-/svgo-extra-2.0.0.tgz#6d0e4ba3e4422008c4d3096b5b52281946f77e95"
-  integrity sha512-kpC6Uh42BTN8oha6gJjake7CRUYXJf4An6C5t0bHmbMqzc3a+F1IOimzOFLUZZ/iUCS3WS8gYMLj9tTQ94F6AQ==
+svgo-extra@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/svgo-extra/-/svgo-extra-2.1.0.tgz#01196d1641c0e7eae4a6f06a82647193156dda06"
+  integrity sha512-bEfNwv941SLFrCluyMePW6M2XDGrfO1JiDN978dK4AkwsoMRVRNAhzLGwdADyR12TytoWCoYquokaMAiDHgfoA==
 
 svgo@^3.0.2:
   version "3.0.2"
@@ -5828,13 +5828,13 @@ vite-plugin-checker@^0.5.6:
     vscode-languageserver-textdocument "^1.0.1"
     vscode-uri "^3.0.2"
 
-vite-plugin-svg4vue@^2.13.0:
-  version "2.13.0"
-  resolved "https://registry.yarnpkg.com/vite-plugin-svg4vue/-/vite-plugin-svg4vue-2.13.0.tgz#ef7cc3f7d9ae0d482607edea606bfdf7228f163e"
-  integrity sha512-THT0RN/IrAaqzMnWJPrIanFOyriNJjE6LwTqsP088d5XZwEFMycEQDNPc1SQXkPoglGXwW99wCNqQXzhf+xARg==
+vite-plugin-svg4vue@^2.14.0:
+  version "2.14.0"
+  resolved "https://registry.yarnpkg.com/vite-plugin-svg4vue/-/vite-plugin-svg4vue-2.14.0.tgz#e27c21352147242717adcec8a4a60de86f69a3d5"
+  integrity sha512-qFhh8NgsaSVye974FcUz7f732MWyAcZJXsS3sCoOKDrzDtaUka4xQoWstLFuRCbwp/viP2LkS63K5kRt3XxR5Q==
   dependencies:
     svgo "^3.0.2"
-    svgo-extra "^2.0.0"
+    svgo-extra "^2.1.0"
     ufo "^1.1.1"
 
 "vite@^3.0.0 || ^4.0.0":
