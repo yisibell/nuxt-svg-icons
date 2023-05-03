@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v1.16.0
+
+[compare changes](https://undefined/undefined/compare/v1.15.0...v1.16.0)
+
+
+### 🚀 Enhancements
+
+  - Support stroke-width (5ea690a)
+
+### ❤️  Contributors
+
+- Elenh ([@yisibell](http://github.com/yisibell))
+
 ## v1.15.0
 
 [compare changes](https://undefined/undefined/compare/v1.14.0...v1.15.0)
