@@ -111,6 +111,7 @@ That's it! You can now use **nuxt-svg-icons** in your Nuxt app ✨
 | `stroke` | `undefined` | `false` | Define the SVG stroke value. This allows you to change the color of **outline svg** which is created by `stroke` attribute. In terms of internal implementation, **vite-plugin-svg4vue** will move all **path** 's `stroke` attribute to its parent node which is `svg` node when your svg is a **monochrome** icon | `string` |
 | `fillOpacity` | `undefined` | `false` | The svg' s `fill-opacity` | `string` |
 | `strokeOpacity` | `undefined` | `false` | The svg' s `stroke-opacity` | `string` |
+| `strokeWidth` | `undefined` | `false` | The svg' s `stroke-width` | `string` |
 | `useOriginSize` | `false` | `false` | Whether to use the svg origin `width` and `height` | `boolean` |
 
 

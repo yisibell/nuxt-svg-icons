@@ -37,6 +37,17 @@
           fill-opacity=".5"
         />
       </li>
+
+      <li>
+        <div>stroke-width:</div>
+        <NuxtSvgIcon
+          name="line"
+          use-origin-size
+          fill="red"
+          stroke="blue"
+          stroke-width="4"
+        />
+      </li>
     </ul>
 
     <h3>With ?component query string</h3>

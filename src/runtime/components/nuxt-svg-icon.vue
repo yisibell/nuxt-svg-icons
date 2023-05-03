@@ -19,6 +19,7 @@ const props = withDefaults(
     stroke?: string
     fillOpacity?: string
     strokeOpacity?: string
+    strokeWidth?: string
     useOriginSize?: boolean
   }>(),
   {
@@ -29,6 +30,7 @@ const props = withDefaults(
     stroke: undefined,
     fillOpacity: undefined,
     strokeOpacity: undefined,
+    strokeWidth: undefined,
     useOriginSize: false,
   }
 )
@@ -55,6 +57,7 @@ const styleVars = computed(() => {
     '--svg-icon-stroke': props.stroke,
     '--svg-icon-fill-opacity': props.fillOpacity,
     '--svg-icon-stroke-opacity': props.strokeOpacity,
+    '--svg-icon-stroke-width': props.strokeWidth,
   }
 })
 
@@ -94,6 +97,7 @@ watchEffect(async () => {
   stroke: var(--svg-icon-stroke) !important;
   fill-opacity: var(--svg-icon-fill-opacity) !important;
   stroke-opacity: var(--svg-icon-stroke-opacity) !important;
+  stroke-width: var(--svg-icon-stroke-width) !important;
 }
 
 .use-origin-width svg {
