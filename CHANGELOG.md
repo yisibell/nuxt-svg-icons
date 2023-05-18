@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v1.18.0
+
+[compare changes](https://undefined/undefined/compare/v1.17.0...v1.18.0)
+
+
+### 🚀 Enhancements
+
+  - Upgrade deps vite-plugin-svg4vue to 2.15.0 (d2483b8)
+
+### 🏡 Chore
+
+  - **docs:** Update readme (7462c5b)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+- Elenh ([@yisibell](http://github.com/yisibell))
+
 ## v1.17.0
 
 [compare changes](https://undefined/undefined/compare/v1.16.0...v1.17.0)
