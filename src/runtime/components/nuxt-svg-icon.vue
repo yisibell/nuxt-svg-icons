@@ -49,7 +49,7 @@ const styleVars = computed(() => {
   const fontSizeCssVar =
     typeof finalFontSize.value === 'number'
       ? `${finalFontSize.value}px`
-      : props.fontSize
+      : finalFontSize.value
 
   return {
     '--svg-icon-font-size': fontSizeCssVar,
