@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v1.18.1
+
+[compare changes](https://undefined/undefined/compare/v1.18.0...v1.18.1)
+
+
+### 🩹 Fixes
+
+  - Resolve size setting failure issue (85a99c5)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.18.0
 
 [compare changes](https://undefined/undefined/compare/v1.17.0...v1.18.0)
