@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v1.19.0
+
+[compare changes](https://undefined/undefined/compare/v1.18.1...v1.19.0)
+
+
+### 🚀 Enhancements
+
+  - **deps:** Support nuxt 3.6 (ed6f24c)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.18.1
 
 [compare changes](https://undefined/undefined/compare/v1.18.0...v1.18.1)
