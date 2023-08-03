@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.20.0
+
+[compare changes](https://undefined/undefined/compare/v1.19.0...v1.20.0)
+
+### 🚀 Enhancements
+
+- Update all non-major deps (e4f1868)
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.19.0
 
 [compare changes](https://undefined/undefined/compare/v1.18.1...v1.19.0)
