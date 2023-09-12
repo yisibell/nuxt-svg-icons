@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.21.0
+
+[compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v1.20.0...v1.21.0)
+
+### 🚀 Enhancements
+
+- Support nuxt 3.7 ([96ab500](https://github.com/yisibell/nuxt-svg-icons/commit/96ab500))
+
+### ❤️ Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.20.0
 
 [compare changes](https://undefined/undefined/compare/v1.19.0...v1.20.0)
