@@ -1,6 +1,10 @@
 # Changelog
 
 
+## v1.21.1
+
+[compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v1.21.0...v1.21.1)
+
 ## v1.21.0
 
 [compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v1.20.0...v1.21.0)
