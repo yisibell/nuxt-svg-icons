@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.22.0
+
+[compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v1.21.1...v1.22.0)
+
+### 🚀 Enhancements
+
+- Add runtime dir to transpile list ([26cf145](https://github.com/yisibell/nuxt-svg-icons/commit/26cf145))
+
+### ❤️ Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.21.1
 
 [compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v1.21.0...v1.21.1)
