@@ -6,6 +6,7 @@ import {
 } from '@nuxt/kit'
 import { svg4VuePlugin } from 'vite-plugin-svg4vue'
 import type { Svg4VuePluginOptions } from 'vite-plugin-svg4vue'
+import { fileURLToPath } from 'node:url'
 
 export interface ModuleOptions {
   svg4vue?: Svg4VuePluginOptions
@@ -26,8 +27,11 @@ export default defineNuxtModule<ModuleOptions>({
     },
     enableNuxtSvgIconComponent: true,
   },
-  setup(moduleOptions) {
+  setup(moduleOptions, nuxt) {
     const { resolve } = createResolver(import.meta.url)
+    const runtimeDir = fileURLToPath(new URL('./runtime', import.meta.url))
+
+    nuxt.options.build.transpile.push(runtimeDir)
 
     addVitePlugin(svg4VuePlugin(moduleOptions.svg4vue))
 
