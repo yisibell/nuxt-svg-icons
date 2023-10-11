@@ -35,7 +35,7 @@
         <span>use original svg size, And set fill , fill-opacity:</span>
         <NuxtSvgIcon
           name="line"
-          :use-origin-size="true"
+          :use-original-size="true"
           fill="gold"
           fill-opacity=".5"
         />
@@ -45,7 +45,7 @@
         <span>stroke-width:</span>
         <NuxtSvgIcon
           name="line"
-          use-origin-size
+          use-original-size
           fill="red"
           stroke="blue"
           stroke-width="4"

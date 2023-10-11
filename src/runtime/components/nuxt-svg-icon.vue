@@ -20,7 +20,7 @@ const props = withDefaults(
     fillOpacity?: string
     strokeOpacity?: string
     strokeWidth?: string
-    useOriginSize?: boolean
+    useOriginalSize?: boolean
   }>(),
   {
     fontSize: undefined,
@@ -31,14 +31,14 @@ const props = withDefaults(
     fillOpacity: undefined,
     strokeOpacity: undefined,
     strokeWidth: undefined,
-    useOriginSize: false,
+    useOriginalSize: false,
   }
 )
 
 const descriptorClass = computed(() => {
   return {
-    'use-origin-width': props.useOriginSize,
-    'use-origin-height': props.useOriginSize,
+    'use-original-width': props.useOriginalSize,
+    'use-original-height': props.useOriginalSize,
   }
 })
 
@@ -100,11 +100,11 @@ watchEffect(async () => {
   stroke-width: var(--svg-icon-stroke-width) !important;
 }
 
-.use-origin-width svg {
+.use-original-width svg {
   width: var(--svg-origin-width--with-unit) !important;
 }
 
-.use-origin-height svg {
+.use-original-height svg {
   height: var(--svg-origin-height--with-unit) !important;
 }
 </style>

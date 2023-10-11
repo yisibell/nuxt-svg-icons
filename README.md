@@ -112,7 +112,7 @@ That's it! You can now use **nuxt-svg-icons** in your Nuxt app ✨
 | `fillOpacity` | `undefined` | `false` | The svg' s `fill-opacity` | `string` |
 | `strokeOpacity` | `undefined` | `false` | The svg' s `stroke-opacity` | `string` |
 | `strokeWidth` | `undefined` | `false` | The svg' s `stroke-width` | `string` |
-| `useOriginSize` | `false` | `false` | Whether to use the svg original `width` and `height` | `boolean` |
+| `useOriginalSize` | `false` | `false` | Whether to use the svg original `width` and `height` | `boolean` |
 
 
 In the project, use `<nuxt-svg-icon name="" />`, where name is the name of your svg icon from the folder `~/assets/icons`
