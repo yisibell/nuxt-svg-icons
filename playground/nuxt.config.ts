@@ -8,12 +8,4 @@ export default defineNuxtConfig({
       assetsDirName: 'assets/icons',
     },
   },
-  // vite: {
-  //   server: {
-  //     hmr: {
-  //       port: 3001,
-  //       clientPort: 3001,
-  //     },
-  //   },
-  // },
 })
