@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v1.23.0
+
+[compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v1.22.0...v1.23.0)
+
+### 🚀 Enhancements
+
+- Rename `useOriginSize` to `useOriginalSize` ([7cf8de3](https://github.com/yisibell/nuxt-svg-icons/commit/7cf8de3))
+
+### 🏡 Chore
+
+- Update readme ([4b7e48f](https://github.com/yisibell/nuxt-svg-icons/commit/4b7e48f))
+- Update example ([248dd6b](https://github.com/yisibell/nuxt-svg-icons/commit/248dd6b))
+
+### ❤️ Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.22.0
 
 [compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v1.21.1...v1.22.0)
