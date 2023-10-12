@@ -61,6 +61,7 @@
           The path to be included by the g element and use original svg width,
           height:
         </span>
+
         <FireIcon
           fill="red"
           fill-opacity=".5"
