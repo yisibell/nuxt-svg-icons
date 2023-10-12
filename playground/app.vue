@@ -75,8 +75,6 @@
 </template>
 
 <script setup lang="ts">
-// import { ref } from '#imports'
-
 import FireIcon from '~/assets/icons/fire.svg?component'
 import VueLogo from '~/assets/icons/iconfont/vue-logo.svg?component'
 import VueLogoFilled from '~/assets/icons/iconfont/vue-logo-filled.svg?component'
