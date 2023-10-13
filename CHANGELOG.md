@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v1.23.1
+
+[compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v1.23.0...v1.23.1)
+
+### 🩹 Fixes
+
+- [#3](https://github.com/yisibell/nuxt-svg-icons/issues/3) ([#3](https://github.com/yisibell/nuxt-svg-icons/issues/3))
+
+### 🏡 Chore
+
+- Update example ([789ea24](https://github.com/yisibell/nuxt-svg-icons/commit/789ea24))
+- Upgrade all non-major deps ([6d125a4](https://github.com/yisibell/nuxt-svg-icons/commit/6d125a4))
+
+### ❤️ Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.23.0
 
 [compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v1.22.0...v1.23.0)
