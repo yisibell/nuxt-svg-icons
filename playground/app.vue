@@ -5,7 +5,10 @@
     <ul>
       <li>
         Icon with fill and font-size:
-        <VueLogo fill="green" font-size="36" />
+        <VueLogo
+          fill="green"
+          font-size="36"
+        />
       </li>
 
       <li>Icon with font-size: <VueLogoFilled font-size="50" /></li>
@@ -16,7 +19,10 @@
     <ul>
       <li>
         Icon with fill and font-size:
-        <FireIcon fill="red" font-size="36" />
+        <FireIcon
+          fill="red"
+          font-size="36"
+        />
       </li>
     </ul>
 
@@ -24,12 +30,30 @@
 
     <ul>
       <li>
-        Icon with font-size: <NuxtSvgIcon name="javascript" :font-size="36" />
+        Icon with font-size: <NuxtSvgIcon
+          name="javascript"
+          :font-size="36"
+        />
       </li>
 
-      <li>Icon with size: <NuxtSvgIcon name="javascript" :size="48" /></li>
-      <li>Icon with fill: <NuxtSvgIcon name="notused" fill="red" /></li>
-      <li>Icon with color: <NuxtSvgIcon name="notused" color="skyblue" /></li>
+      <li>
+        Icon with size: <NuxtSvgIcon
+          name="javascript"
+          :size="48"
+        />
+      </li>
+      <li>
+        Icon with fill: <NuxtSvgIcon
+          name="notused"
+          fill="red"
+        />
+      </li>
+      <li>
+        Icon with color: <NuxtSvgIcon
+          name="notused"
+          color="skyblue"
+        />
+      </li>
 
       <li>
         <span>use original svg size, And set fill , fill-opacity:</span>

@@ -32,7 +32,7 @@ const props = withDefaults(
     strokeOpacity: undefined,
     strokeWidth: undefined,
     useOriginalSize: false,
-  }
+  },
 )
 
 const descriptorClass = computed(() => {
@@ -46,8 +46,8 @@ const finalFontSize = computed(() => props.fontSize || props.size)
 const finalFill = computed(() => props.fill || props.color)
 
 const styleVars = computed(() => {
-  const fontSizeCssVar =
-    typeof finalFontSize.value === 'number'
+  const fontSizeCssVar
+    = typeof finalFontSize.value === 'number'
       ? `${finalFontSize.value}px`
       : finalFontSize.value
 
@@ -76,9 +76,10 @@ watchEffect(async () => {
     const rawIcon = await iconsImport[`/assets/icons/${props.name}.svg`]()
 
     icon.value = rawIcon as unknown as string
-  } catch {
+  }
+  catch {
     console.error(
-      `[nuxt-svg-icons] Icon '${props.name}' doesn't exist in 'assets/icons'`
+      `[nuxt-svg-icons] Icon '${props.name}' doesn't exist in 'assets/icons'`,
     )
   }
 })
