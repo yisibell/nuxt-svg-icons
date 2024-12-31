@@ -37,7 +37,7 @@
     "url": "https://github.com/yisibell/nuxt-svg-icons/issues"
   },
   "scripts": {
-    "prepack": "nuxt-module-build",
+    "prepack": "nuxt-module-build build",
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build --stub && nuxt-module-build prepare && nuxi prepare playground",
