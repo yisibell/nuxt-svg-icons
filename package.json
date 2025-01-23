@@ -15,6 +15,7 @@
       "types": "./dist/types.d.mts",
       "default": "./dist/module.mjs"
     },
+    "./client": "./client.d.ts",
     "./*": [
       "./*",
       "./*.d.ts"
