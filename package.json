@@ -16,7 +16,8 @@
       "types": "./dist/types.d.ts",
       "import": "./dist/module.mjs",
       "require": "./dist/module.cjs"
-    }
+    },
+    "./*": ["./*", "./*.d.ts"]
   },
   "files": [
     "dist",
