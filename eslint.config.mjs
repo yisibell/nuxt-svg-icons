@@ -8,9 +8,6 @@ export default createConfigForNuxt({
   },
 },
 {
-  ignores: ['dist'],
-},
-{
   rules: {
     'vue/multi-word-component-names': 'off',
     '@typescript-eslint/ban-types': 'off',
@@ -18,4 +15,6 @@ export default createConfigForNuxt({
     '@typescript-eslint/no-explicit-any': 'off',
     'vue/no-v-html': 0,
   },
+}).append({
+  ignores: ['dist'],
 })
