@@ -6,8 +6,11 @@ export default createConfigForNuxt({
     stylistic: true,
     formatters: true,
   },
-}, {
-  ignores: ['dist', 'node_modules'],
+},
+{
+  ignores: ['dist'],
+},
+{
   rules: {
     'vue/multi-word-component-names': 'off',
     '@typescript-eslint/ban-types': 'off',
