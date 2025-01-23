@@ -7,6 +7,7 @@ export default createConfigForNuxt({
     formatters: true,
   },
 }, {
+  ignores: ['dist', 'node_modules'],
   rules: {
     'vue/multi-word-component-names': 'off',
     '@typescript-eslint/ban-types': 'off',
@@ -14,5 +15,4 @@ export default createConfigForNuxt({
     '@typescript-eslint/no-explicit-any': 'off',
     'vue/no-v-html': 0,
   },
-
 })
