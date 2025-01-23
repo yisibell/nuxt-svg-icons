@@ -12,8 +12,8 @@ importers:
         specifier: ^3.15.2
         version: 3.15.2(magicast@0.3.5)(rollup@4.31.0)
       vite-plugin-svg4vue:
-        specifier: ^4.0.0
-        version: 4.0.0(vite@6.0.11(@types/node@22.10.8)(jiti@2.4.2)(terser@5.37.0)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.2))
+        specifier: ^4.0.3
+        version: 4.0.3(vite@6.0.11(@types/node@22.10.8)(jiti@2.4.2)(terser@5.37.0)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.2))
     devDependencies:
       '@nuxt/devtools':
         specifier: 2.0.0-beta.3
@@ -4295,8 +4295,8 @@ packages:
       '@nuxt/kit':
         optional: true
 
-  vite-plugin-svg4vue@4.0.0:
-    resolution: {integrity: sha512-1QyfnqT+hIKfoZxMQy5NMJ4Wo4CwfxmD0+uXojh+h5yY9DcSPaQG7VqJit10Vxh0gIYZcW+IylbYK8iu0kJgrQ==}
+  vite-plugin-svg4vue@4.0.3:
+    resolution: {integrity: sha512-QV/YV+3HCbWklxYqy5sKHK4kr2PjZtzaU0TSCbJk2DDeIJ8oA5kJe2Uh7pjKocAZ5oE3Wz63ecPPRKhk+hy5/A==}
     peerDependencies:
       vite: ^4.0.2 || >=5.0.0
       vue: ^2.7.14 || ^3.2.45
@@ -9381,7 +9381,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  vite-plugin-svg4vue@4.0.0(vite@6.0.11(@types/node@22.10.8)(jiti@2.4.2)(terser@5.37.0)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.2)):
+  vite-plugin-svg4vue@4.0.3(vite@6.0.11(@types/node@22.10.8)(jiti@2.4.2)(terser@5.37.0)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.2)):
     dependencies:
       svgo: 3.3.2
       svgo-extra: 2.3.0(svgo@3.3.2)
