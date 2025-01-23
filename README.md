@@ -90,7 +90,7 @@ import VueLogoFilled from '~/assets/icons/iconfont/vue-logo-filled.svg?component
 If you are using TypeScript, `nuxt-svg-icons/client` can be added to `d.ts` declaration file.
 
 ``` ts
-/// <reference types="nuxt-svg-icons/client" />
+/// <reference types="nuxt-svg-icons/client.d.ts" />
 ```
 
 That's it! You can now use **nuxt-svg-icons** in your Nuxt app ✨
