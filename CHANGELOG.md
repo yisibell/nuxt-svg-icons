@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v2.0.1
+
+[compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v2.0.0...v2.0.1)
+
+### 🩹 Fixes
+
+- Playground tsconfig ([d7b5691](https://github.com/yisibell/nuxt-svg-icons/commit/d7b5691))
+- Client types exports problem ([7a518ce](https://github.com/yisibell/nuxt-svg-icons/commit/7a518ce))
+- Up vite-plugin-svg4vue and fix exports ([fb3334c](https://github.com/yisibell/nuxt-svg-icons/commit/fb3334c))
+
+### 🏡 Chore
+
+- Release:noprepack scripts ([c458e6d](https://github.com/yisibell/nuxt-svg-icons/commit/c458e6d))
+
+### ❤️ Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v2.0.0
 
 [compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v1.25.0...v2.0.0)
