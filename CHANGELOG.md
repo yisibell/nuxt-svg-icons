@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.1.0
+
+[compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v2.0.6...v2.1.0)
+
+### 🚀 Enhancements
+
+- Optimization props use logic ([35600bf](https://github.com/yisibell/nuxt-svg-icons/commit/35600bf))
+
+### ❤️ Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v2.0.6
 
 [compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v2.0.5...v2.0.6)
