@@ -9,41 +9,38 @@
 <script setup lang="ts">
 import { ref, watchEffect, computed } from '#imports'
 
-const props = withDefaults(
-  defineProps<{
-    name: string
-    fontSize?: string | number
-    size?: string | number
-    fill?: string
-    color?: string
-    stroke?: string
-    fillOpacity?: string
-    strokeOpacity?: string
-    strokeWidth?: string
-    useOriginalSize?: boolean
-  }>(),
-  {
-    fontSize: undefined,
-    size: undefined,
-    fill: undefined,
-    color: undefined,
-    stroke: undefined,
-    fillOpacity: undefined,
-    strokeOpacity: undefined,
-    strokeWidth: undefined,
-    useOriginalSize: false,
-  },
-)
+const props = withDefaults(defineProps<{
+  name: string
+  fontSize?: string | number
+  size?: string | number
+  fill?: string
+  color?: string
+  stroke?: string
+  fillOpacity?: string
+  strokeOpacity?: string
+  strokeWidth?: string
+  useOriginalSize?: boolean
+}>(), {})
+
+const finalFontSize = computed(() => props.fontSize || props.size)
+const finalFill = computed(() => props.fill || props.color)
+
+const customColor = computed(() => !!finalFill.value)
+const customStroke = computed(() => !!props.stroke)
+const customSize = computed(() => !!finalFontSize.value)
 
 const descriptorClass = computed(() => {
   return {
     'use-original-width': props.useOriginalSize,
     'use-original-height': props.useOriginalSize,
+    'custom-color': customColor.value,
+    'custom-stroke': customStroke.value,
+    'custom-size': customSize.value,
+    'custom-fill-opacity': !!props.fillOpacity,
+    'custom-stroke-opacity': !!props.strokeOpacity,
+    'custom-stroke-width': !!props.strokeWidth,
   }
 })
-
-const finalFontSize = computed(() => props.fontSize || props.size)
-const finalFill = computed(() => props.fill || props.color)
 
 const styleVars = computed(() => {
   const fontSizeCssVar
@@ -92,12 +89,27 @@ watchEffect(async () => {
   justify-content: center;
 }
 
-.nuxt-svg-icon svg {
-  font-size: var(--svg-icon-font-size) !important;
+.nuxt-svg-icon.custom-color svg {
   fill: var(--svg-icon-fill) !important;
+}
+
+.nuxt-svg-icon.custom-stroke svg {
   stroke: var(--svg-icon-stroke) !important;
+}
+
+.nuxt-svg-icon.custom-size svg {
+  font-size: var(--svg-icon-font-size) !important;
+}
+
+.nuxt-svg-icon.custom-fill-opacity svg {
   fill-opacity: var(--svg-icon-fill-opacity) !important;
+}
+
+.nuxt-svg-icon.custom-stroke-opacity svg {
   stroke-opacity: var(--svg-icon-stroke-opacity) !important;
+}
+
+.nuxt-svg-icon.custom-stroke-width svg {
   stroke-width: var(--svg-icon-stroke-width) !important;
 }
 

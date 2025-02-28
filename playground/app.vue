@@ -96,6 +96,24 @@
         />
       </li>
     </ul>
+
+    <h3>JJS</h3>
+
+    <ul>
+      <li>
+        <NuxtSvgIcon
+          name="jjs/free"
+          :size="36"
+        />
+      </li>
+
+      <li>
+        <NuxtSvgIcon
+          name="jjs/shipping-cart"
+          :size="36"
+        />
+      </li>
+    </ul>
   </div>
 </template>
 
