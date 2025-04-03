@@ -114,6 +114,8 @@
         />
       </li>
     </ul>
+
+    <JjshouseFilterIcon />
   </div>
 </template>
 

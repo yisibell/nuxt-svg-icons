@@ -66,7 +66,7 @@ watchEffect(async () => {
       import: 'default',
       eager: false,
       query: {
-        raw: '',
+        raw: true,
       },
     })
 

@@ -12,8 +12,8 @@ importers:
         specifier: ^3.15.2
         version: 3.15.2(magicast@0.3.5)(rollup@4.31.0)
       vite-plugin-svg4vue:
-        specifier: ^4.1.0
-        version: 4.1.0(vite@6.0.11(@types/node@22.10.8)(jiti@2.4.2)(terser@5.37.0)(yaml@2.7.0))(vue@3.5.13(typescript@5.6.2))
+        specifier: ^4.2.0
+        version: 4.2.0
     devDependencies:
       '@nuxt/devtools':
         specifier: 2.0.0-beta.3
@@ -3974,8 +3974,8 @@ packages:
   svg-tags@1.0.0:
     resolution: {integrity: sha512-ovssysQTa+luh7A5Weu3Rta6FJlFBBbInjOh722LIt6klpU2/HtdUbszju/G4devcvk8PGt7FCLv5wftu3THUA==}
 
-  svgo-extra@2.3.1:
-    resolution: {integrity: sha512-1lowPwRrUKCqEor9eSxcwEtguVQnunLnwTCJAGj77byk60nYT1LSr6ZF8LrsLEU3xFwaOubq0IC1XsTQ9d7WXA==}
+  svgo-extra@2.3.2:
+    resolution: {integrity: sha512-34HdTdcsEtBzyVYmZVdpJxxmyH623v717b5r8s//atuyqZn9OUVQkWpTyxJaBsgxVXRkhTovVTBHOB/il4wR4g==}
     peerDependencies:
       svgo: ^3.0.2
 
@@ -4265,6 +4265,10 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
+  uuid@11.1.0:
+    resolution: {integrity: sha512-0/A9rDy9P7cJ+8w1c9WD9V//9Wj15Ce2MPz8Ri6032usz+NfePxx5AcN3bN+r6ZL6jEo066/yNYB3tn4pQEx+A==}
+    hasBin: true
+
   validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
 
@@ -4337,11 +4341,8 @@ packages:
       '@nuxt/kit':
         optional: true
 
-  vite-plugin-svg4vue@4.1.0:
-    resolution: {integrity: sha512-VbiFu1KXhFKxSUCWC85XhHSidQ7BLHqao3pCw25tYzi+vCjwanoIF6RxYljWfBEV5hWIX82AUtGKsAJ8ftkbzQ==}
-    peerDependencies:
-      vite: ^4.0.2 || >=5.0.0
-      vue: ^2.7.14 || ^3.2.45
+  vite-plugin-svg4vue@4.2.0:
+    resolution: {integrity: sha512-7knCqQob6MXZJK23PFpiw0QH2MraCzG04RSCspq3lCW/oeqcX1dm4RKzauOKGdntykCyXb7Kkeb6qwYJUu6LXw==}
 
   vite-plugin-vue-inspector@5.3.1:
     resolution: {integrity: sha512-cBk172kZKTdvGpJuzCCLg8lJ909wopwsu3Ve9FsL1XsnLBiRT9U3MePcqrgGHgCX2ZgkqZmAGR8taxw+TV6s7A==}
@@ -9067,7 +9068,7 @@ snapshots:
 
   svg-tags@1.0.0: {}
 
-  svgo-extra@2.3.1(svgo@3.3.2):
+  svgo-extra@2.3.2(svgo@3.3.2):
     dependencies:
       svgo: 3.3.2
 
@@ -9369,6 +9370,8 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
+  uuid@11.1.0: {}
+
   validate-npm-package-license@3.0.4:
     dependencies:
       spdx-correct: 3.2.0
@@ -9471,13 +9474,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  vite-plugin-svg4vue@4.1.0(vite@6.0.11(@types/node@22.10.8)(jiti@2.4.2)(terser@5.37.0)(yaml@2.7.0))(vue@3.5.13(typescript@5.6.2)):
+  vite-plugin-svg4vue@4.2.0:
     dependencies:
+      defu: 6.1.4
       svgo: 3.3.2
-      svgo-extra: 2.3.1(svgo@3.3.2)
+      svgo-extra: 2.3.2(svgo@3.3.2)
       ufo: 1.5.4
-      vite: 6.0.11(@types/node@22.10.8)(jiti@2.4.2)(terser@5.37.0)(yaml@2.7.0)
-      vue: 3.5.13(typescript@5.6.2)
+      uuid: 11.1.0
 
   vite-plugin-vue-inspector@5.3.1(vite@6.0.11(@types/node@22.10.8)(jiti@2.4.2)(terser@5.37.0)(yaml@2.7.0)):
     dependencies:
