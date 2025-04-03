@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.2.0
+
+[compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v2.1.0...v2.2.0)
+
+### 🚀 Enhancements
+
+- Selector namespace supports ([7e51960](https://github.com/yisibell/nuxt-svg-icons/commit/7e51960))
+
+### ❤️ Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v2.1.0
 
 [compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v2.0.6...v2.1.0)
