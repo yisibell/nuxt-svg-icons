@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.3.0
+
+[compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v2.2.0...v2.3.0)
+
+### 🚀 Enhancements
+
+- Up vite-plugin-svg4vue to v4.3 ([25b1f34](https://github.com/yisibell/nuxt-svg-icons/commit/25b1f34))
+
+### ❤️ Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v2.2.0
 
 [compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v2.1.0...v2.2.0)
