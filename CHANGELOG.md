@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v2.4.0
+
+[compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v2.3.0...v2.4.0)
+
+### 🚀 Enhancements
+
+- Upgrade deps to latest ([2e10f69](https://github.com/yisibell/nuxt-svg-icons/commit/2e10f69))
+
+### 🏡 Chore
+
+- Update playground ([8362761](https://github.com/yisibell/nuxt-svg-icons/commit/8362761))
+
+### ❤️ Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v2.3.0
 
 [compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v2.2.0...v2.3.0)
