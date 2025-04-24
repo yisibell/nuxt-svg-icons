@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watchEffect, computed } from '#imports'
+import { ref, watchEffect, computed, nextTick } from '#imports'
 
 const props = withDefaults(defineProps<{
   name: string
@@ -21,6 +21,10 @@ const props = withDefaults(defineProps<{
   strokeWidth?: string
   useOriginalSize?: boolean
 }>(), {})
+
+const emit = defineEmits<{
+  mounted: []
+}>()
 
 const finalFontSize = computed(() => props.fontSize || props.size)
 const finalFill = computed(() => props.fill || props.color)
@@ -73,6 +77,10 @@ watchEffect(async () => {
     const rawIcon = await iconsImport[`/assets/icons/${props.name}.svg`]()
 
     icon.value = rawIcon as unknown as string
+
+    await nextTick()
+
+    emit('mounted')
   }
   catch {
     console.error(
