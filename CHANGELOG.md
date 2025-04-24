@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.5.0
+
+[compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v2.4.0...v2.5.0)
+
+### 🚀 Enhancements
+
+- Add mounted event for nuxt-svg-icon ([9a7410a](https://github.com/yisibell/nuxt-svg-icons/commit/9a7410a))
+
+### ❤️ Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v2.4.0
 
 [compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v2.3.0...v2.4.0)
