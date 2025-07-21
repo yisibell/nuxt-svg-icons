@@ -1,4 +1,4 @@
-import { createConfigForNuxt } from '@nuxt/eslint-config/flat'
+import { createConfigForNuxt } from '@nuxt/eslint-config'
 
 export default createConfigForNuxt({
   features: {
