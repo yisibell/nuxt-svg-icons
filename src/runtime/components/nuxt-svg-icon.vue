@@ -64,6 +64,12 @@ const styleVars = computed(() => {
 
 const icon = ref('')
 
+const logError = () => {
+  console.error(
+      `[nuxt-svg-icons] Icon '${props.name}' doesn't exist in 'assets/icons'`,
+    )
+}
+
 watchEffect(async () => {
   try {
     const iconsImport = import.meta.glob('assets/icons/**/**.svg', {
@@ -74,18 +80,24 @@ watchEffect(async () => {
       },
     })
 
-    const rawIcon = await iconsImport[`/assets/icons/${props.name}.svg`]()
 
-    icon.value = rawIcon as unknown as string
+    const moduleFetchFunc = iconsImport[`/assets/icons/${props.name}.svg`]
 
-    await nextTick()
+    if (moduleFetchFunc) {
+      const rawIcon = await moduleFetchFunc()
 
-    emit('mounted')
+      icon.value = rawIcon as unknown as string
+
+      await nextTick()
+
+      emit('mounted')
+    } else {
+      logError()
+    }
+
   }
   catch {
-    console.error(
-      `[nuxt-svg-icons] Icon '${props.name}' doesn't exist in 'assets/icons'`,
-    )
+    logError()
   }
 })
 </script>
