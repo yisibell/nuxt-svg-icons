@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v3.0.0
+
+[compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v2.5.0...v3.0.0)
+
+### 🚀 Enhancements
+
+- ⚠️  Support for nuxt4 ([60b3442](https://github.com/yisibell/nuxt-svg-icons/commit/60b3442))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️  Support for nuxt4 ([60b3442](https://github.com/yisibell/nuxt-svg-icons/commit/60b3442))
+
+### ❤️ Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v2.5.0
 
 [compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v2.4.0...v2.5.0)
