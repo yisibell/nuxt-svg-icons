@@ -1,6 +1,6 @@
 <template>
   <div
-    v-if="showLoading && loading"
+    v-if="!eager && showLoading && loading"
     :style="[loadingStyle]"
     class="nuxt-svg-icon__loading"
     :class="loadingClass"
@@ -32,8 +32,10 @@ const props = withDefaults(defineProps<{
   useOriginalSize?: boolean
   showLoading?: boolean
   loadingClass?: string
+  eager?: boolean
 }>(), {
   showLoading: false,
+  eager: false,
 })
 
 const emit = defineEmits<{
@@ -96,24 +98,47 @@ const logError = () => {
 
 const loading = ref(true)
 
-watchEffect(async () => {
-  try {
-    const iconsImport = import.meta.glob('assets/icons/**/**.svg', {
+const importIconModules = () => {
+  if (props.eager) {
+    const iconModules = import.meta.glob('assets/icons/**/**.svg', {
       import: 'default',
-      eager: false,
+      eager: true,
       query: {
         raw: true,
       },
     })
 
-    const moduleFetchFunc = iconsImport[`/assets/icons/${props.name}.svg`]
+    return iconModules
+  }
 
-    if (moduleFetchFunc) {
+  return import.meta.glob('assets/icons/**/**.svg', {
+    import: 'default',
+    eager: false,
+    query: {
+      raw: true,
+    },
+  })
+}
+
+watchEffect(async () => {
+  try {
+    const iconModules = importIconModules()
+
+    const iconModule = iconModules[`/assets/icons/${props.name}.svg`]
+
+    if (iconModule) {
       loading.value = true
 
-      const rawIcon = await moduleFetchFunc()
+      let iconRaw: string
 
-      icon.value = rawIcon as unknown as string
+      if (typeof iconModule === 'function') {
+        iconRaw = await iconModule()
+      }
+      else {
+        iconRaw = iconModule as string
+      }
+
+      icon.value = iconRaw
 
       loading.value = false
 

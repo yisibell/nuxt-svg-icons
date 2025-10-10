@@ -21,6 +21,7 @@
     <NuxtSvgIcon
       name="filter/strapssleeves/selected/long_sleeve"
       size="60px"
+      eager
       @mounted="handleWhenAsyncIconMounted"
     />
   </div>
