@@ -7,8 +7,17 @@
     <NuxtSvgIcon
       name="filter/strapssleeves/hover/long_sleeve"
       size="60px"
-       @mounted="handleWhenAsyncIconMounted"
-    />
+      show-loading
+      @mounted="handleWhenAsyncIconMounted"
+    >
+      <template #loading>
+        <img
+          src="~/assets/images/loading/lazyload_240_240.png"
+          alt=""
+          width="100%"
+        >
+      </template>
+    </NuxtSvgIcon>
     <NuxtSvgIcon
       name="filter/strapssleeves/selected/long_sleeve"
       size="60px"
@@ -22,7 +31,7 @@ import Icon from '@/assets/icons/filter/strapssleeves/hover/long_sleeve.svg?raw'
 
 const handleWhenAsyncIconMounted = () => {
   if (import.meta.client) {
-    console.log('async svg icon mounted!!!');
+    console.log('async svg icon mounted!!!')
   }
 }
 </script>
