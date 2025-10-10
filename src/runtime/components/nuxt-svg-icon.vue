@@ -94,7 +94,7 @@ const logError = () => {
   )
 }
 
-const loading = ref(false)
+const loading = ref(true)
 
 watchEffect(async () => {
   try {
