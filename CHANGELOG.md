@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v3.1.0
+
+[compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v3.0.0...v3.1.0)
+
+### 🚀 Enhancements
+
+- Supports loading status ([1d75eb6](https://github.com/yisibell/nuxt-svg-icons/commit/1d75eb6))
+
+### ❤️ Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v3.0.0
 
 [compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v2.5.0...v3.0.0)
