@@ -1,5 +1,7 @@
 <template>
   <div>
+    <JjshouseFilterIcon />
+
     <h3>Iconfont svg demo</h3>
 
     <ul>
@@ -114,8 +116,6 @@
         />
       </li>
     </ul>
-
-    <JjshouseFilterIcon />
   </div>
 </template>
 

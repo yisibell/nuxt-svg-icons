@@ -1,13 +1,23 @@
 <template>
+  <div
+    v-if="showLoading && loading"
+    :style="[loadingStyle]"
+    class="nuxt-svg-icon__loading"
+    :class="loadingClass"
+  >
+    <slot name="loading" />
+  </div>
   <span
+    v-else
     :class="['nuxt-svg-icon', descriptorClass]"
-    :style="[styleVars]"
+    :style="[mainStyleVars]"
     v-html="icon"
   />
 </template>
 
 <script setup lang="ts">
 import { ref, watchEffect, computed, nextTick } from '#imports'
+import type { StyleValue } from 'vue'
 
 const props = withDefaults(defineProps<{
   name: string
@@ -20,7 +30,11 @@ const props = withDefaults(defineProps<{
   strokeOpacity?: string
   strokeWidth?: string
   useOriginalSize?: boolean
-}>(), {})
+  showLoading?: boolean
+  loadingClass?: string
+}>(), {
+  showLoading: false,
+})
 
 const emit = defineEmits<{
   mounted: []
@@ -46,14 +60,24 @@ const descriptorClass = computed(() => {
   }
 })
 
-const styleVars = computed(() => {
-  const fontSizeCssVar
-    = typeof finalFontSize.value === 'number'
-      ? `${finalFontSize.value}px`
-      : finalFontSize.value
+const fontSizeCssVar = computed(() => {
+  return typeof finalFontSize.value === 'number'
+    ? `${finalFontSize.value}px`
+    : finalFontSize.value
+})
+
+const loadingStyle = computed<StyleValue>(() => {
+  const width = props.useOriginalSize ? undefined : fontSizeCssVar.value
 
   return {
-    '--svg-icon-font-size': fontSizeCssVar,
+    width,
+    height: width,
+  }
+})
+
+const mainStyleVars = computed(() => {
+  return {
+    '--svg-icon-font-size': fontSizeCssVar.value,
     '--svg-icon-fill': finalFill.value,
     '--svg-icon-stroke': props.stroke,
     '--svg-icon-fill-opacity': props.fillOpacity,
@@ -66,9 +90,11 @@ const icon = ref('')
 
 const logError = () => {
   console.error(
-      `[nuxt-svg-icons] Icon '${props.name}' doesn't exist in 'assets/icons'`,
-    )
+    `[nuxt-svg-icons] Icon '${props.name}' doesn't exist in 'assets/icons'`,
+  )
 }
+
+const loading = ref(false)
 
 watchEffect(async () => {
   try {
@@ -80,21 +106,24 @@ watchEffect(async () => {
       },
     })
 
-
     const moduleFetchFunc = iconsImport[`/assets/icons/${props.name}.svg`]
 
     if (moduleFetchFunc) {
+      loading.value = true
+
       const rawIcon = await moduleFetchFunc()
 
       icon.value = rawIcon as unknown as string
 
+      loading.value = false
+
       await nextTick()
 
       emit('mounted')
-    } else {
+    }
+    else {
       logError()
     }
-
   }
   catch {
     logError()
@@ -103,7 +132,8 @@ watchEffect(async () => {
 </script>
 
 <style>
-.nuxt-svg-icon {
+.nuxt-svg-icon,
+.nuxt-svg-icon__loading {
   display: inline-flex;
   align-items: center;
   justify-content: center;

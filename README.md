@@ -113,6 +113,8 @@ That's it! You can now use **nuxt-svg-icons** in your Nuxt app ✨
 | `strokeOpacity` | `undefined` | `false` | The svg' s `stroke-opacity` | `string` |
 | `strokeWidth` | `undefined` | `false` | The svg' s `stroke-width` | `string` |
 | `useOriginalSize` | `false` | `false` | Whether to use the svg original `width` and `height` | `boolean` |
+| `showLoading` | `false` | `false` | Whether to enable loading placeholder |
+| `loadingClass` | - | `false` | Add a custom loading class name |
 
 
 In the project, use `<nuxt-svg-icon name="" />`, where name is the name of your svg icon from the folder `~/assets/icons`
@@ -137,10 +139,31 @@ If you have a svg icon in nested directories such as:
 
 then the icons's name will be based on its own path directory and filename. Therefore, the icon's name will be:
 
-```html
+```vue
 <nuxt-svg-icon name="admin/badge" /> and <nuxt-svg-icon name="user/badge" />
 ```
 
+### Slots
+
+- loading
+
+You can customize the display content during loading via `loading` slot. This helps improve the **CLS**.
+
+```html
+<nuxt-svg-icon
+  name="some-icon"
+  size="60px"
+  show-loading
+>
+  <template #loading>
+    <img
+      src="~/assets/images/loading/lazyload_240_240.png"
+      alt=""
+      width="100%"
+    >
+  </template>
+</nuxt-svg-icon>
+```
 
 
 ## Options
