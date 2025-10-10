@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v3.1.1
+
+[compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v3.1.0...v3.1.1)
+
+### 🩹 Fixes
+
+- Update loading defaults value to true ([6dadab9](https://github.com/yisibell/nuxt-svg-icons/commit/6dadab9))
+
+### ❤️ Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v3.1.0
 
 [compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v3.0.0...v3.1.0)
