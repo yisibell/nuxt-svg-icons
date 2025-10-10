@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v3.2.0
+
+[compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v3.1.1...v3.2.0)
+
+### 🚀 Enhancements
+
+- **nuxt-svg-icon:** Supports import SVG icon as static or dynamic via eager props ([fc1da7b](https://github.com/yisibell/nuxt-svg-icons/commit/fc1da7b))
+
+### ❤️ Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v3.1.1
 
 [compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v3.1.0...v3.1.1)
