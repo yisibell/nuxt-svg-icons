@@ -12,8 +12,8 @@ importers:
         specifier: ^4.0.1
         version: 4.0.1(magicast@0.3.5)
       vite-plugin-svg4vue:
-        specifier: ^4.5.0
-        version: 4.5.0
+        specifier: ^4.5.1
+        version: 4.5.1
     devDependencies:
       '@nuxt/devtools':
         specifier: 2.6.2
@@ -4276,6 +4276,11 @@ packages:
     engines: {node: '>= 0.4'}
     hasBin: true
 
+  resolve@1.22.11:
+    resolution: {integrity: sha512-RfqAvLnMl313r7c9oclB1HhUEAezcpLjz95wFH4LVuhk9JF/r22qmVP9AMmOU4vMX7Q8pN8jwNg/CSpdFnMjTQ==}
+    engines: {node: '>= 0.4'}
+    hasBin: true
+
   resolve@2.0.0-next.5:
     resolution: {integrity: sha512-U7WjGVG9sH8tvjW5SmGbQuui75FiyjAX72HX15DwBBwF9dNiQZRQAg9nnPhYy+TUnE0+VcrttuvNI8oSxZcocA==}
     hasBin: true
@@ -4943,8 +4948,8 @@ packages:
       '@nuxt/kit':
         optional: true
 
-  vite-plugin-svg4vue@4.5.0:
-    resolution: {integrity: sha512-OnsSbMlSYtRSf7HN4DvFMXbQ4gshaoiFoOjo2Z5oyDb5eqxlyUHwyUKoxWR+SII/41lIfZt3JiCbg0y57AEtgg==}
+  vite-plugin-svg4vue@4.5.1:
+    resolution: {integrity: sha512-aYPZxh/gXLFJEW31JCxd1fQvqufcQD1hSRkBTauRbt+iWALOXnSXUuyleQZ5SEkzM7wnlqAMZgGyKwHn7+v2HQ==}
 
   vite-plugin-vue-tracer@1.0.0:
     resolution: {integrity: sha512-a+UB9IwGx5uwS4uG/a9kM6fCMnxONDkOTbgCUbhFpiGhqfxrrC1+9BibV7sWwUnwj1Dg6MnRxG0trLgUZslDXA==}
@@ -7889,7 +7894,7 @@ snapshots:
     dependencies:
       debug: 3.2.7
       is-core-module: 2.16.1
-      resolve: 1.22.10
+      resolve: 1.22.11
     transitivePeerDependencies:
       - supports-color
     optional: true
@@ -9838,6 +9843,13 @@ snapshots:
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
 
+  resolve@1.22.11:
+    dependencies:
+      is-core-module: 2.16.1
+      path-parse: 1.0.7
+      supports-preserve-symlinks-flag: 1.0.0
+    optional: true
+
   resolve@2.0.0-next.5:
     dependencies:
       is-core-module: 2.16.1
@@ -10556,7 +10568,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  vite-plugin-svg4vue@4.5.0:
+  vite-plugin-svg4vue@4.5.1:
     dependencies:
       defu: 6.1.4
       ohash: 2.0.11
