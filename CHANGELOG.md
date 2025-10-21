@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v3.2.1
+
+[compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v3.2.0...v3.2.1)
+
+### 🏡 Chore
+
+- Upgrade deps ([2fb0bf4](https://github.com/yisibell/nuxt-svg-icons/commit/2fb0bf4))
+
+### ❤️ Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v3.2.0
 
 [compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v3.1.1...v3.2.0)
