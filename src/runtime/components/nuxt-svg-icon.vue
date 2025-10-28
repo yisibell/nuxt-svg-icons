@@ -1,6 +1,6 @@
 <template>
   <div
-    v-if="!eager && showLoading && loading"
+    v-if="showLoading && loading"
     :style="[loadingStyle]"
     class="nuxt-svg-icon__loading"
     :class="loadingClass"
@@ -32,10 +32,8 @@ const props = withDefaults(defineProps<{
   useOriginalSize?: boolean
   showLoading?: boolean
   loadingClass?: string
-  eager?: boolean
 }>(), {
   showLoading: false,
-  eager: false,
 })
 
 const emit = defineEmits<{
@@ -98,47 +96,24 @@ const logError = () => {
 
 const loading = ref(true)
 
-const importIconModules = () => {
-  if (props.eager) {
+watchEffect(async () => {
+  try {
     const iconModules = import.meta.glob('assets/icons/**/**.svg', {
       import: 'default',
-      eager: true,
+      eager: false,
       query: {
         raw: true,
       },
     })
-
-    return iconModules
-  }
-
-  return import.meta.glob('assets/icons/**/**.svg', {
-    import: 'default',
-    eager: false,
-    query: {
-      raw: true,
-    },
-  })
-}
-
-watchEffect(async () => {
-  try {
-    const iconModules = importIconModules()
 
     const iconModule = iconModules[`/assets/icons/${props.name}.svg`]
 
     if (iconModule) {
       loading.value = true
 
-      let iconRaw: string
+      const iconRaw = await iconModule()
 
-      if (typeof iconModule === 'function') {
-        iconRaw = await iconModule()
-      }
-      else {
-        iconRaw = iconModule as string
-      }
-
-      icon.value = iconRaw
+      icon.value = iconRaw as string
 
       loading.value = false
 
