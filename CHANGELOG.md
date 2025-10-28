@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v3.3.0
+
+[compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v3.2.1...v3.3.0)
+
+### 🚀 Enhancements
+
+- Remove eager supports ([ea3ca86](https://github.com/yisibell/nuxt-svg-icons/commit/ea3ca86))
+
+### ❤️ Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v3.2.1
 
 [compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v3.2.0...v3.2.1)
