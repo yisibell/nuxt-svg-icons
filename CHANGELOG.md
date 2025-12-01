@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v3.3.1
+
+[compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v3.3.0...v3.3.1)
+
+### 🩹 Fixes
+
+- No logging in server side ([c03b472](https://github.com/yisibell/nuxt-svg-icons/commit/c03b472))
+
+### ❤️ Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v3.3.0
 
 [compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v3.2.1...v3.3.0)
