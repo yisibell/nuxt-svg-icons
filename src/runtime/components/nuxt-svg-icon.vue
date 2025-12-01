@@ -89,6 +89,8 @@ const mainStyleVars = computed(() => {
 const icon = ref('')
 
 const logError = () => {
+  if (import.meta.server) return
+
   console.error(
     `[nuxt-svg-icons] Icon '${props.name}' doesn't exist in 'assets/icons'`,
   )
