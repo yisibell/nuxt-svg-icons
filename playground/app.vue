@@ -1,126 +1,85 @@
 <template>
-  <div>
-    <JjshouseFilterIcon />
-
-    <h3>Iconfont svg demo</h3>
-
-    <ul>
-      <li>
-        Icon with fill and font-size:
-        <VueLogo
-          fill="green"
-          font-size="36"
-        />
-      </li>
-
-      <li>Icon with font-size: <VueLogoFilled font-size="50" /></li>
-    </ul>
-
-    <h3>Other svg demo</h3>
-
-    <ul>
-      <li>
-        Icon with fill and font-size:
-        <FireIcon
-          fill="red"
-          font-size="36"
-        />
-      </li>
-    </ul>
-
-    <h3>nuxt-svg-icon demo</h3>
-
-    <ul>
-      <li>
-        Icon with font-size: <NuxtSvgIcon
-          name="javascript"
-          :font-size="36"
-        />
-      </li>
-
-      <li>
-        Icon with size: <NuxtSvgIcon
-          name="javascript"
-          :size="48"
-        />
-      </li>
-      <li>
-        Icon with fill: <NuxtSvgIcon
-          name="notused"
-          fill="red"
-        />
-      </li>
-      <li>
-        Icon with color: <NuxtSvgIcon
-          name="notused"
-          color="skyblue"
-        />
-      </li>
-
-      <li>
-        <span>use original svg size, And set fill , fill-opacity:</span>
-        <NuxtSvgIcon
-          name="line"
-          :use-original-size="true"
-          fill="gold"
-          fill-opacity=".5"
-        />
-      </li>
-
-      <li>
-        <span>stroke-width:</span>
-        <NuxtSvgIcon
-          name="line"
-          use-original-size
-          fill="red"
-          stroke="blue"
-          stroke-width="4"
-        />
-      </li>
-    </ul>
-
-    <h3>With ?component query string</h3>
-
-    <ul>
-      <li>
-        <span>
-          The path to be included by the g element and use original svg width,
-          height:
-        </span>
-
-        <FireIcon
-          fill="red"
-          fill-opacity=".5"
-          style="
-            width: var(--svg-origin-width);
-            height: var(--svg-origin-height);
-          "
-        />
-      </li>
-    </ul>
-
-    <h3>JJS</h3>
-
-    <ul>
-      <li>
-        <NuxtSvgIcon
-          name="jjs/free"
-          :size="36"
-        />
-      </li>
-
-      <li>
-        <NuxtSvgIcon
-          name="jjs/shipping-cart"
-          :size="36"
-        />
-      </li>
-    </ul>
+  <div class="demo-app">
+    <DemoHero :icon-count="iconCount" />
+    <DemoQuickStart />
+    <DemoProps />
+    <DemoImportMethods />
+    <DemoCssProps />
+    <DemoIconGallery :all-icon-names="allIconNames" />
+    <DemoFooter />
   </div>
 </template>
 
 <script setup lang="ts">
-import FireIcon from '~/assets/icons/fire.svg?component'
-import VueLogo from '~/assets/icons/iconfont/vue-logo.svg?component'
-import VueLogoFilled from '~/assets/icons/iconfont/vue-logo-filled.svg?component'
+import { computed } from 'vue'
+
+// ── Shared icon discovery ──────────────────────────────────────
+const iconModules = import.meta.glob('./assets/icons/**/*.svg', { query: '?raw' })
+
+const allIconNames = computed<string[]>(() =>
+  Object.keys(iconModules)
+    .map((p) => p.replace('./assets/icons/', '').replace('.svg', ''))
+    .sort(),
+)
+
+const iconCount = computed(() => allIconNames.value.length)
 </script>
+
+<style>
+/* ═══════════════════════════════════════════════════════════════
+   RESET & BASE
+   ═══════════════════════════════════════════════════════════════ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.demo-app {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 40px 24px 72px;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SHARED SECTION STYLES
+   ═══════════════════════════════════════════════════════════════ */
+.section {
+  margin-bottom: 52px;
+}
+
+.section-head {
+  margin-bottom: 24px;
+}
+
+.section-title {
+  font-size: 1.45rem;
+  font-weight: 750;
+  color: #0f172a;
+  margin-bottom: 4px;
+  letter-spacing: -0.02em;
+}
+
+.section-sub {
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.section-sub code {
+  background: #e2e8f0;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+</style>
