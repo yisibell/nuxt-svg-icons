@@ -41,7 +41,7 @@
         @click="copy(icon)"
       >
         <span class="gallery-icon">
-          <NuxtSvgIcon :name="icon" size="28" />
+          <NuxtSvgIcon :name="icon" size="50px" />
         </span>
         <span class="gallery-name">{{ displayName(icon) }}</span>
       </button>
