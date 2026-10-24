@@ -1,6 +1,6 @@
 {
   "name": "nuxt-svg-icons",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "A module for Nuxt 4.4 that allows you to use your own SVG icons as a component, url or raw text.",
   "author": {
     "name": "elenh",

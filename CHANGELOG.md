@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v4.0.1
+
+[compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v4.0.0...v4.0.1)
+
+### 🏡 Chore
+
+- Add nuxt 3.16 supports ([d432a4e](https://github.com/yisibell/nuxt-svg-icons/commit/d432a4e))
+
+### ❤️ Contributors
+
+- Elenh ([@yisibell](https://github.com/yisibell))
+
 ## v4.0.0
 
 [compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v3.3.1...v4.0.0)
