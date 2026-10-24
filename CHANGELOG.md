@@ -1,6 +1,27 @@
 # Changelog
 
 
+## v4.0.0
+
+[compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v3.3.1...v4.0.0)
+
+### 🚀 Enhancements
+
+- Update demo ([ceba18d](https://github.com/yisibell/nuxt-svg-icons/commit/ceba18d))
+- ⚠️  Bump to nuxt 4.4 ([61c9ffe](https://github.com/yisibell/nuxt-svg-icons/commit/61c9ffe))
+
+### 🤖 CI
+
+- Update demo and supports deploy to vercel ([da9c08a](https://github.com/yisibell/nuxt-svg-icons/commit/da9c08a))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️  Bump to nuxt 4.4 ([61c9ffe](https://github.com/yisibell/nuxt-svg-icons/commit/61c9ffe))
+
+### ❤️ Contributors
+
+- Elenh <yisiwings@163.com>
+
 ## v3.3.1
 
 [compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v3.3.0...v3.3.1)
