@@ -18,7 +18,7 @@ export default defineNuxtModule<ModuleOptions>({
     name: 'nuxt-svg-icons',
     configKey: 'nuxtSvgIcons',
     compatibility: {
-      nuxt: '>=3.0.0',
+      nuxt: '>=4.4.0 <4.5.0',
     },
   },
   defaults: {
