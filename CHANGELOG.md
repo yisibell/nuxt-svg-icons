@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v5.0.0
+
+[compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v4.0.1...v5.0.0)
+
+### 🚀 Enhancements
+
+- ⚠️  Supports nuxt 4.6 ([7a8b5e1](https://github.com/yisibell/nuxt-svg-icons/commit/7a8b5e1))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️  Supports nuxt 4.6 ([7a8b5e1](https://github.com/yisibell/nuxt-svg-icons/commit/7a8b5e1))
+
+### ❤️ Contributors
+
+- Elenh ([@yisibell](https://github.com/yisibell))
+
 ## v4.0.1
 
 [compare changes](https://github.com/yisibell/nuxt-svg-icons/compare/v4.0.0...v4.0.1)
