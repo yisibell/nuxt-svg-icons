@@ -23,12 +23,12 @@ vi.mock('vite-plugin-svg4vue', () => ({
 const { default: moduleDefinition } = await import('../src/module')
 
 describe('nuxt-svg-icons module', () => {
-  it('exposes Nuxt 4.4 compatibility metadata and defaults', () => {
+  it('exposes Nuxt 4.6 compatibility metadata and defaults', () => {
     expect(moduleDefinition.meta).toMatchObject({
       name: 'nuxt-svg-icons',
       configKey: 'nuxtSvgIcons',
       compatibility: {
-        nuxt: '>=3.16.0 <4.5.0',
+        nuxt: '>=4.5.0',
       },
     })
     expect(moduleDefinition.defaults).toEqual({

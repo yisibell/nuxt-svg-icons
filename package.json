@@ -1,7 +1,7 @@
 {
   "name": "nuxt-svg-icons",
   "version": "4.0.1",
-  "description": "A module for Nuxt 4.4 that allows you to use your own SVG icons as a component, url or raw text.",
+  "description": "A module for Nuxt 4.6 that allows you to use your own SVG icons as a component, url or raw text.",
   "author": {
     "name": "elenh",
     "email": "yisiwings@163.com"
@@ -58,23 +58,23 @@
     "test:watch": "vitest watch"
   },
   "dependencies": {
-    "@nuxt/kit": "~4.4.0",
-    "vite-plugin-svg4vue": "^5.0.0"
+    "@nuxt/kit": "~4.6.0",
+    "vite-plugin-svg4vue": "^7.0.0"
   },
   "devDependencies": {
-    "@nuxt/devtools": "2.6.2",
     "@nuxt/eslint-config": "^1.16.0",
     "@nuxt/module-builder": "1.0.3",
-    "@nuxt/schema": "~4.4.0",
-    "@nuxt/test-utils": "^3.19.2",
+    "@nuxt/schema": "~4.6.0",
+    "@nuxt/test-utils": "^4.3.4",
     "changelogen": "~0.6.2",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^9.31.0",
     "eslint-plugin-format": "^2.0.1",
-    "nuxt": "~4.4.0",
+    "nuxt": "~4.6.0",
     "prettier": "^3.6.2",
-    "typescript": "~5.8.3",
-    "vitest": "^3.2.4",
+    "typescript": "~5.9.3",
+    "vite": "^8.3.5",
+    "vitest": "^4.1.12",
     "vue-tsc": "^3.0.3"
   }
 }

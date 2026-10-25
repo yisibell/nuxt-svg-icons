@@ -10,10 +10,10 @@
 
 # nuxt-svg-icons
 
-> A module for Nuxt 4.4 that allows you to use your own SVG icons quickly and enjoyably powered by <a href="https://github.com/yisibell/vite-plugin-svg4vue" target="_blank">vite-plugin-svg4vue</a>.
+> A module for Nuxt 4.6 that allows you to use your own SVG icons quickly and enjoyably powered by <a href="https://github.com/yisibell/vite-plugin-svg4vue" target="_blank">vite-plugin-svg4vue</a>.
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
-<!-- - [📖 &nbsp;Documentation](https://example.com) -->
+
 
 ## Features
 

@@ -3,7 +3,7 @@ import { resolve } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { svg4VuePlugin } from 'vite-plugin-svg4vue'
 
-describe('vite-plugin-svg4vue v5 integration', () => {
+describe('vite-plugin-svg4vue v7 integration', () => {
   it('transforms an icon imported with the raw query', async () => {
     const iconPath = resolve(
       'test/fixtures/basic/assets/icons/check.svg',
